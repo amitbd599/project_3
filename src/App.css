@@ -1,5 +1,136 @@
+:root {
+  --primary_color: #dd131a;
+  --text-color:  rgb(77, 77, 77);
+}
 .App {
-  /* overflow: hidden !important; */
+  overflow: hidden !important;
+}
+.menu {
+  background-color: #fff;
+}
+.stellarnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stellarnav li a {
+  font-family: "Ramaraja", serif !important;
+  font-size: 20px;
+}
+
+.menu_icon a {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.menu_icon svg:hover {
+  color: rgb(255, 61, 61);
+}
+.count_Cart {
+  position: relative;
+}
+.count_zone {
+  background: rgb(255, 61, 61);
+  border-radius: 50%;
+  left: 14px;
+  padding: 0px 9px;
+  position: absolute;
+  line-height: normal;
+  font-size: 14px;
+}
+
+.rec-arrow-left,
+.rec-arrow-right {
+  display: none;
+}
+.fPDpuU {
+  margin: 0px !important;
+}
+.slider_item .text {
+  top: 140px;
+  right: 150px;
+}
+.hard_Text {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.Hero_Image{
+  margin-top: 150px;
+}
+.Hero_Image img{
+  max-height: 400px;
+  z-index: 9;
+}
+.Hero_Image .TiChartPie{
+ font-size: 80px;
+ animation: TiChartPie 5s linear 2s infinite alternate;
+ position: absolute;
+ right: 125px;
+ color: var(--primary_color);
+ z-index: -1;
+}
+
+@keyframes TiChartPie {
+  0%{
+    transform: translateX(-220px);
+  }
+  100%{
+    transform:translateX(0px);
+  }
 }
 
 
+.Hero_Image .row,
+.Hero_Image .col-md-6 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.Hero_Image .wrap h3{
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: var(--primary_color);
+}
+.Hero_Image .wrap h2{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.Hero_Image .wrap>p{
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.Hero_Card {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.Hero_Card .wrap {
+  border: 1px solid #ddd;
+  padding: 25px 30px;
+  border-radius: 10px;
+  transition: all .5s linear;
+}
+.Hero_Card .wrap h2 {
+  font-size: 20px;
+
+  margin-bottom: 15px;
+}
+.Hero_Card .wrap p {
+  font-size: 14px;
+  color:var(--text-color) ;
+}
+.Hero_Card .wrap .icon {
+  font-size: 60px;
+  margin-bottom: 5px;
+  color: var(--primary_color);
+}
+.Hero_Card .wrap:hover {
+background: var(--primary_color);
+box-shadow:  6px 6px 20px #c7c7c7,
+             -6px -6px 20px #f9f9f9;
+transform: translateY(-15px);
+}
+.Hero_Card .wrap:hover h2,
+.Hero_Card .wrap:hover p,
+.Hero_Card .wrap:hover .icon{
+color: #fff;
+}

@@ -15,6 +15,7 @@
     "@mui/material": "^5.4.1",
     "@mui/styled-engine-sc": "^5.4.1",
     "@react-google-maps/api": "^2.7.0",
+    "@splidejs/splide": "^3.6.12",
     "@szhsin/react-menu": "^2.3.2",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",

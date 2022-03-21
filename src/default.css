@@ -30,7 +30,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 0px;
   color: #1a133b;
   font-weight: 400;
@@ -44,7 +44,7 @@ span {
 }
 
 a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Ramaraja', serif !important;
   text-decoration: none;
   transition: all 0.3s linear;
   cursor: pointer !important;
@@ -88,8 +88,8 @@ form * {
   padding: 0;
 }
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100% !important;
+  height: auto !important;
 }
 
 /*Only Margin Top (5-200) px Here*/
@@ -1629,10 +1629,10 @@ input:focus-visible {
 }
 
 .theme-primary-color {
-  color: #12bf7c;
+  color: #ED0F0F;
 }
 .theme-primary-color-hover:hover {
-  color: #12bf7c;
+  color: #000000;
 }
 .theme-secondary-color {
   background-color: #f6faf8;
@@ -1647,15 +1647,40 @@ input:focus-visible {
   color: #12bf7c;
 }
 .my-btn-primary {
-  border: 2px solid #12bf7c;
+  background: #ED0F0F;
   padding: 10px 40px;
   color: #fff !important;
   border-radius: 5px;
 }
 .my-btn-primary:hover {
-  background-color: #fff;
-  color: #12bf7c !important;
-  border: 2px solid #12bf7c;
+  background: #000000;
+  color: #fff !important;
+  position: relative;
+  animation: example 5s linear 2s infinite alternate;
+  
+}
+.my-btn-primary {
+  border: 2px solid #ED0F0F;
+  background: #ED0F0F;
+  padding: 10px 40px;
+  color: #fff !important;
+  border-radius: 5px;
+}
+.my-btn-primary:hover {
+  background: #000000;
+  color: #fff !important;
+  border: 2px solid #000000;
+  position: relative;
+  animation: example 5s linear 2s infinite alternate;
+  
+}
+@keyframes example {
+  0%{
+      transform: scale(100%);
+  }
+  100%{
+    transform: scale(110%);
+  }
 }
 .my-btn-primary-outline {
   border: 2px solid #ffffff;
