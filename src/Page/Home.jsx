@@ -1,8 +1,11 @@
 import React from "react";
 import Header from "../Components/Universal_Components/Header";
-import Hero_Card from "./Hero_Card";
-import Hero_Image from "./Hero_Image";
-import Slider from "./Slider";
+import Hero_Card from "../Components/Child_Components/Hero_Card";
+import Logo_Marquee from "../Components/Child_Components/Logo_Marquee";
+import Shop_Image_Card from "../Components/Child_Components/Shop_Image_Card";
+import Slider from "../Components/Child_Components/Slider";
+import Hero_Image from "../Components/Child_Components/Hero_Image";
+import New_Peoduct from "../Components/Child_Components/New_Peoduct";
 
 const Home = () => {
   return (
@@ -21,6 +24,18 @@ const Home = () => {
       {/* Hero Team */}
 
       <Hero_Image></Hero_Image>
+
+      {/* Shop Card */}
+
+      <Shop_Image_Card></Shop_Image_Card>
+
+      {/* Logo Marquee */}
+
+      <Logo_Marquee></Logo_Marquee>
+
+      {/* New Product */}
+
+      <New_Peoduct></New_Peoduct>
     </>
   );
 };

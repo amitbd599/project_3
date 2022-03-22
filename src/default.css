@@ -1665,6 +1665,7 @@ input:focus-visible {
   padding: 10px 40px;
   color: #fff !important;
   border-radius: 5px;
+  font-family: "Poppins", sans-serif !important;
 }
 .my-btn-primary:hover {
   background: #000000;

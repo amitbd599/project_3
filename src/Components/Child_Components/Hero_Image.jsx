@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
-import imgBlog from "../../src/Assets/img/leader-01.webp";
+import imgBlog from "../../Assets/img/leader-01.webp";
 import { TiArrowRight } from "react-icons/ti";
-import { TiArrowUp } from "react-icons/ti";
+import { Link } from "react-router-dom";
 const Hero_Image = () => {
   return (
     <div className="Hero_Image">
@@ -38,7 +38,7 @@ const Hero_Image = () => {
                   <p className="theme-primary-color">From Peoples</p>
                 </div>
               </div>
-              <Button className="my-btn-primary">Read More Us</Button>
+              <Link  to={'/'} className="my-btn-primary">Read More Us</Link>
             </div>
           </Col>
         </Row>

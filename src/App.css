@@ -1,6 +1,8 @@
 :root {
   --primary_color: #dd131a;
-  --text-color:  rgb(77, 77, 77);
+  --text-color: rgb(77, 77, 77);
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Ramaraja", serif;
 }
 .App {
   overflow: hidden !important;
@@ -54,47 +56,46 @@
   font-weight: 600;
 }
 
-.Hero_Image{
+.Hero_Image {
   margin-top: 150px;
 }
-.Hero_Image img{
+.Hero_Image img {
   max-height: 400px;
   z-index: 9;
 }
-.Hero_Image .TiChartPie{
- font-size: 80px;
- animation: TiChartPie 5s linear 2s infinite alternate;
- position: absolute;
- right: 125px;
- color: var(--primary_color);
- z-index: -1;
+.Hero_Image .TiChartPie {
+  font-size: 80px;
+  animation: TiChartPie 2s linear 2s infinite alternate;
+  position: absolute;
+  right: 125px;
+  color: var(--primary_color);
+  z-index: -1;
 }
 
 @keyframes TiChartPie {
-  0%{
-    transform: translateX(-220px);
+  0% {
+    transform: translateX(-50px);
   }
-  100%{
-    transform:translateX(0px);
+  100% {
+    transform: translateX(0px);
   }
 }
-
 
 .Hero_Image .row,
 .Hero_Image .col-md-6 {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-.Hero_Image .wrap h3{
+.Hero_Image .wrap h3 {
   font-size: 25px;
   margin-bottom: 15px;
   color: var(--primary_color);
 }
-.Hero_Image .wrap h2{
+.Hero_Image .wrap h2 {
   font-size: 35px;
   margin-bottom: 10px;
 }
-.Hero_Image .wrap>p{
+.Hero_Image .wrap > p {
   font-size: 14px;
   color: var(--text-color);
 }
@@ -107,7 +108,7 @@
   border: 1px solid #ddd;
   padding: 25px 30px;
   border-radius: 10px;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
 .Hero_Card .wrap h2 {
   font-size: 20px;
@@ -116,7 +117,7 @@
 }
 .Hero_Card .wrap p {
   font-size: 14px;
-  color:var(--text-color) ;
+  color: var(--text-color);
 }
 .Hero_Card .wrap .icon {
   font-size: 60px;
@@ -124,13 +125,204 @@
   color: var(--primary_color);
 }
 .Hero_Card .wrap:hover {
-background: var(--primary_color);
-box-shadow:  6px 6px 20px #c7c7c7,
-             -6px -6px 20px #f9f9f9;
-transform: translateY(-15px);
+  background: var(--primary_color);
+  box-shadow: 6px 6px 20px #c7c7c7, -6px -6px 20px #f9f9f9;
+  transform: translateY(-15px);
 }
 .Hero_Card .wrap:hover h2,
 .Hero_Card .wrap:hover p,
-.Hero_Card .wrap:hover .icon{
-color: #fff;
+.Hero_Card .wrap:hover .icon {
+  color: #fff;
+}
+
+.Shop_Image_Card {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.Shop_Image_Card .img {
+  overflow: hidden;
+}
+.Shop_Image_Card .wrap .headText_1 {
+  font-size: 25px;
+  font-weight: normal;
+  color: var(--text-color);
+  margin-top: 20px;
+  font-family: var(--font-secondary);
+}
+.Shop_Image_Card .wrap img {
+  transition: all 0.3s linear;
+}
+.Shop_Image_Card .wrap:hover img {
+  transform: scale(110%);
+}
+.Shop_Image_Card .wrap .headText_2 {
+  font-size: 35px;
+  font-weight: normal;
+}
+.Shop_Image_Card .wrap .my_button {
+  font-size: 20px;
+  color: var(--text-color);
+  padding-top: 20px;
+  position: relative;
+}
+.Shop_Image_Card .wrap .my_button::after {
+  transition: all 0.3s linear;
+  width: 0px;
+  position: absolute;
+  content: "";
+  height: 3px;
+  background: var(--primary_color);
+  left: 0px;
+  bottom: 0;
+}
+.Shop_Image_Card .wrap .my_button:hover::after {
+  width: 88px;
+}
+
+.Logo_Marquee {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.Logo_Marquee img {
+  margin: 0 20px;
+}
+
+.New_Peoduct {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.New_Peoduct .wrap > h2 {
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  position: relative;
+  display: inline;
+}
+.New_Peoduct .wrap > h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: var(--primary_color);
+  position: absolute;
+  bottom: 13px;
+  left: 0px;
+}
+
+.New_Peoduct .dot_point .dot_color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.New_Peoduct .starIcon svg {
+  margin-right: 5px;
+  color: #ffb400;
+}
+.New_Peoduct .dot_point .dot_color.red {
+  background: #dd131a;
+}
+.New_Peoduct .dot_point .dot_color.green {
+  background: #09ff00;
+}
+.New_Peoduct .dot_point .dot_color.black {
+  background: #292929;
+}
+.New_Peoduct .image {
+  overflow: hidden;
+  position: relative;
+}
+.New_Peoduct .img_overflow {
+  transform: translateX(-500px);
+  position: absolute;
+  transition: all 0.4s linear;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.New_Peoduct .wrap:hover .img_overflow {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.New_Peoduct .text {
+  position: absolute;
+    top: 10px;
+    z-index: 9;
+    left: 10px;
+    padding: 0px 21px;
+    background: var(--primary_color);
+    color: #fff;
+    transition: all 0.3s linear;
+    font-size: 12px;
+}
+.New_Peoduct .text::before {
+  content: "";
+  position: absolute;
+  border: 9px solid var(--primary_color);
+  border-color: transparent transparent transparent var(--primary_color);
+  top: 15px;
+}
+.New_Peoduct .shape {
+  position: absolute;
+  top: 10px;
+  z-index: 9;
+  right: 10px;
+  padding: 3px;
+  background: #262626;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.New_Peoduct .wrap:hover .shape {
+  opacity: 1;
+}
+.New_Peoduct .iconPart {
+  display: grid;
+  position: absolute;
+  top: 60px;
+  z-index: 9;
+  right: 0;
+  margin: 10px;
+  overflow: hidden;
+}
+.New_Peoduct .iconPart svg {
+  font-size: 38px;
+  background: #fff;
+  color: var(--primary_color);
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.New_Peoduct .heading_text {
+  font-size: 20px;
+  color: #1a133b;
+  font-family: var(--font-secondary);
+}
+.New_Peoduct .heading_text:hover {
+  color: var(--primary_color);
+}
+
+.New_Peoduct .iconPart a:nth-last-child(4),
+.New_Peoduct .iconPart a:nth-last-child(3),
+.New_Peoduct .iconPart a:nth-last-child(2),
+.New_Peoduct .iconPart a:nth-last-child(1) {
+  transform: translateX(50px);
+  transition: all 0.2s linear;
+}
+
+.New_Peoduct .iconPart a:nth-last-child(4) {
+  transition-delay: 0.15s;
+}
+.New_Peoduct .iconPart a:nth-last-child(3) {
+  transition-delay: 0.25s;
+}
+.New_Peoduct .iconPart a:nth-last-child(2) {
+  transition-delay: 0.35s;
+}
+.New_Peoduct .iconPart a:nth-last-child(1) {
+  transition-delay: 0.45s;
+}
+
+.New_Peoduct .wrap:hover .iconPart a:nth-last-child(4),
+.New_Peoduct .wrap:hover .iconPart a:nth-last-child(3),
+.New_Peoduct .wrap:hover .iconPart a:nth-last-child(2),
+.New_Peoduct .wrap:hover .iconPart a:nth-last-child(1) {
+  transform: translateX(0px);
 }
