@@ -244,14 +244,14 @@
 }
 .New_Peoduct .text {
   position: absolute;
-    top: 10px;
-    z-index: 9;
-    left: 10px;
-    padding: 0px 21px;
-    background: var(--primary_color);
-    color: #fff;
-    transition: all 0.3s linear;
-    font-size: 12px;
+  top: 10px;
+  z-index: 9;
+  left: 10px;
+  padding: 0px 21px;
+  background: var(--primary_color);
+  color: #fff;
+  transition: all 0.3s linear;
+  font-size: 12px;
 }
 .New_Peoduct .text::before {
   content: "";
@@ -325,4 +325,135 @@
 .New_Peoduct .wrap:hover .iconPart a:nth-last-child(2),
 .New_Peoduct .wrap:hover .iconPart a:nth-last-child(1) {
   transform: translateX(0px);
+}
+
+.Intro {
+  margin-bottom: 100px;
+}
+.Intro .part_1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.Intro .part_1 h2 {
+  font-size: 44px;
+  line-height: 54px;
+}
+.Intro .part_1 p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 11px;
+  color: var(--text-color);
+}
+.Intro .part_2 .wrap {
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+.Intro .part_2 .wrap.bg-color {
+  background: #f2f6fae1;
+}
+
+.Intro .part_2 .wrap:hover {
+  box-shadow: 0px 40px 40px 0px rgb(14 17 51 / 10%);
+}
+.Intro .part_2 .wrap h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.Intro .part_2 .wrap p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.Intro .part_2 .wrap a {
+  font-size: 20px;
+  color: var(--text-color);
+}
+.Intro .wrap .my_button {
+  position: relative;
+}
+.Intro .wrap .my_button::after {
+  transition: all 0.3s linear;
+  width: 0px;
+  position: absolute;
+  content: "";
+  height: 3px;
+  background: var(--primary_color);
+  left: 0px;
+  bottom: 0;
+}
+.Intro .wrap .my_button:hover::after {
+  width: 82px;
+}
+.Intro .icon {
+  font-size: 80px;
+  margin-bottom: 10px;
+  color: var(--primary_color);
+}
+
+.InvestBord {
+  margin-top: 150px;
+}
+.InvestBord .part_2{
+  padding-left: 50px;
+}
+.InvestBord .part_2 .wrap > h2 {
+  margin-top: 54px;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+.InvestBord .part_2 .wrap > p {
+  font-size: 15px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.InvestBord .part_2 .wrap {
+  font-size: 55px;
+}
+.InvestBord .part_2 .counting > div {
+  margin-right: 40px;
+}
+.InvestBord .part_2 .counting > div h2{
+  font-size: 40px;
+}
+.InvestBord .part_2 li{
+  margin-bottom: 10px;
+}
+
+
+.Testimonial{
+  background: #F4F7FB;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding:  100px 0;
+}
+.Testimonial .part_1 h2{
+ font-size: 40px;
+}
+.Testimonial .part_1 p{
+ font-size: 15px;
+ padding: 10px 300px;
+}
+.Testimonial .part_2{
+  margin-top: 60px;
+}
+.Testimonial .FaQuoteLeft{
+  font-size: 70px;
+  color: #ddd;
+}
+.Testimonial .part_2 .wrap p{
+  font-size: 15px;
+  color: var(--text-color);
+  line-height: 30px;
+  text-align: justify;
+}
+.Testimonial .rec-item-wrapper{
+  padding: 0 20px !important;
+}
+.Testimonial .name{
+  font-size: 20px;
+  color: var(--primary_color);
 }

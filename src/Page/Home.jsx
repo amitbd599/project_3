@@ -6,6 +6,9 @@ import Shop_Image_Card from "../Components/Child_Components/Shop_Image_Card";
 import Slider from "../Components/Child_Components/Slider";
 import Hero_Image from "../Components/Child_Components/Hero_Image";
 import New_Peoduct from "../Components/Child_Components/New_Peoduct";
+import Intro from "../Components/Child_Components/Intro";
+import InvestBord from "../Components/Child_Components/InvestBord";
+import Testimonial from "../Components/Child_Components/Testimonial";
 
 const Home = () => {
   return (
@@ -36,6 +39,18 @@ const Home = () => {
       {/* New Product */}
 
       <New_Peoduct></New_Peoduct>
+
+      {/* Intro */}
+
+      <Intro></Intro>
+
+      {/* Invest Bord */}
+
+      <InvestBord></InvestBord>
+
+      {/* Testimonial */}
+
+      <Testimonial></Testimonial>
     </>
   );
 };
