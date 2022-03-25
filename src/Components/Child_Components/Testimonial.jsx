@@ -1,14 +1,17 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-elastic-carousel";
 import { FaQuoteLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Testimonial = () => {
-  // const breakPoints = [
-  //     { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
-  //     { width: 1450, itemsToShow: 3 }
-
-  //   ]
+  
+  const [data, setData]= useState([]);
+  useEffect(()=>{
+    const url ='/DataBase/Testimonial.json'
+    axios.get(url)
+    .then((res)=>setData(res.data))
+  },[])
   return (
     <div className="Testimonial">
       <Row className="part_1 text-center">
@@ -33,84 +36,29 @@ const Testimonial = () => {
                   { width: 600, itemsToShow: 3 },
                 ]}
               >
-                <div className="wrap">
+
+                  {
+                    data.map((data)=>(
+                      <div className="wrap">
                   <FaQuoteLeft className="FaQuoteLeft" />
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error porro, itaque hic quidem corporis, iure voluptates vel
-                    qui quae architecto dolore voluptatum dolores provident
-                    explicabo consequuntur sequi necessitatibus odit numquam
-                    officia pariatur odio est cupiditate natus. Hic asperiores
-                    laudantium nesciunt aspernatur, vel facilis est tempore
-                    explicabo nam ex, in accusantium!
+                    {data.des}
                   </p>
-                  <Link className="name">Amit Biswas</Link>
+                  <div className="d-flex mt-20">
+                    <div className="imgBar">
+                        <img src={data.img} alt="" />
+                    </div>
+                    <div className="ml-20">
+                    <Link className="name d-block">{data.name}</Link>
+                    <span>{data.position}</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="wrap">
-                  <FaQuoteLeft className="FaQuoteLeft" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error porro, itaque hic quidem corporis, iure voluptates vel
-                    qui quae architecto dolore voluptatum dolores provident
-                    explicabo consequuntur sequi necessitatibus odit numquam
-                    officia pariatur odio est cupiditate natus. Hic asperiores
-                    laudantium nesciunt aspernatur, vel facilis est tempore
-                    explicabo nam ex, in accusantium!
-                  </p>
-                  <Link className="name">Alex Jon</Link>
-                </div>
-                <div className="wrap">
-                  <FaQuoteLeft className="FaQuoteLeft" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error porro, itaque hic quidem corporis, iure voluptates vel
-                    qui quae architecto dolore voluptatum dolores provident
-                    explicabo consequuntur sequi necessitatibus odit numquam
-                    officia pariatur odio est cupiditate natus. Hic asperiores
-                    laudantium nesciunt aspernatur, vel facilis est tempore
-                    explicabo nam ex, in accusantium!
-                  </p>
-                  <Link className="name">Maria Lusa</Link>
-                </div>
-                <div className="wrap">
-                  <FaQuoteLeft className="FaQuoteLeft" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error porro, itaque hic quidem corporis, iure voluptates vel
-                    qui quae architecto dolore voluptatum dolores provident
-                    explicabo consequuntur sequi necessitatibus odit numquam
-                    officia pariatur odio est cupiditate natus. Hic asperiores
-                    laudantium nesciunt aspernatur, vel facilis est tempore
-                    explicabo nam ex, in accusantium!
-                  </p>
-                  <Link className="name">Luma Route</Link>
-                </div>
-                <div className="wrap">
-                  <FaQuoteLeft className="FaQuoteLeft" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error porro, itaque hic quidem corporis, iure voluptates vel
-                    qui quae architecto dolore voluptatum dolores provident
-                    explicabo consequuntur sequi necessitatibus odit numquam
-                    officia pariatur odio est cupiditate natus. Hic asperiores
-                    laudantium nesciunt aspernatur, vel facilis est tempore
-                    explicabo nam ex, in accusantium!
-                  </p>
-                  <Link className="name">Catrtna RX</Link>
-                </div>
-                <div className="wrap">
-                  <FaQuoteLeft className="FaQuoteLeft" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error porro, itaque hic quidem corporis, iure voluptates vel
-                    qui quae architecto dolore voluptatum dolores provident
-                    explicabo consequuntur sequi necessitatibus odit numquam
-                    officia pariatur odio est cupiditate natus. Hic asperiores
-                    laudantium nesciunt aspernatur, vel facilis est tempore
-                    explicabo nam ex, in accusantium!
-                  </p>
-                  <Link className="name">Donat Mola</Link>
-                </div>
+                    ))
+                  }
+
+                
+                
               </Carousel>
             </div>
           </Col>

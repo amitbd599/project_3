@@ -1686,7 +1686,7 @@ input:focus-visible {
 .my-btn-primary-outline {
   border: 2px solid #ffffff;
   padding: 10px 40px;
-  color: #12bf7c;
+  color: #000000;
   background: #fff;
   border-radius: 5px;
 }
