@@ -6,16 +6,20 @@ import {
   Link
 } from "react-router-dom";
 import './default.css';
-import './App.css';
+import './Css/App.css';
 import Home from "./Page/Home";
+import Shop_Page from "./Page/Shop_Page";
 
 function App() {
   return (
     <div className="App">
       <Router>
      <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/shop-page">
+            <Shop_Page />
           </Route>
           
         </Switch>

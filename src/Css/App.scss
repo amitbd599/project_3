@@ -1,9 +1,12 @@
-:root {
-  --primary_color: #dd131a;
-  --text-color: rgb(77, 77, 77);
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Ramaraja", serif;
+$primary_color: #dd131a;
+$text-color: rgb(77, 77, 77);
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Ramaraja", serif;
+
+* {
+  box-sizing: border-box;
 }
+
 .App {
   overflow: hidden !important;
 }
@@ -68,7 +71,7 @@
   animation: TiChartPie 2s linear 2s infinite alternate;
   position: absolute;
   right: 125px;
-  color: var(--primary_color);
+  color: $primary_color;
   z-index: -1;
 }
 
@@ -89,7 +92,7 @@
 .Hero_Image .wrap h3 {
   font-size: 25px;
   margin-bottom: 15px;
-  color: var(--primary_color);
+  color: $primary_color;
 }
 .Hero_Image .wrap h2 {
   font-size: 35px;
@@ -97,7 +100,7 @@
 }
 .Hero_Image .wrap > p {
   font-size: 14px;
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .Hero_Card {
@@ -117,15 +120,15 @@
 }
 .Hero_Card .wrap p {
   font-size: 14px;
-  color: var(--text-color);
+  color: $text-color;
 }
 .Hero_Card .wrap .icon {
   font-size: 60px;
   margin-bottom: 5px;
-  color: var(--primary_color);
+  color: $primary_color;
 }
 .Hero_Card .wrap:hover {
-  background: var(--primary_color);
+  background: $primary_color;
   box-shadow: 6px 6px 20px #c7c7c7, -6px -6px 20px #f9f9f9;
   transform: translateY(-15px);
 }
@@ -145,9 +148,9 @@
 .Shop_Image_Card .wrap .headText_1 {
   font-size: 25px;
   font-weight: normal;
-  color: var(--text-color);
+  color: $text-color;
   margin-top: 20px;
-  font-family: var(--font-secondary);
+  font-family: $font-secondary;
 }
 .Shop_Image_Card .wrap img {
   transition: all 0.3s linear;
@@ -161,7 +164,7 @@
 }
 .Shop_Image_Card .wrap .my_button {
   font-size: 20px;
-  color: var(--text-color);
+  color: $text-color;
   padding-top: 20px;
   position: relative;
 }
@@ -171,7 +174,7 @@
   position: absolute;
   content: "";
   height: 3px;
-  background: var(--primary_color);
+  background: $primary_color;
   left: 0px;
   bottom: 0;
 }
@@ -192,7 +195,7 @@
   margin-bottom: 100px;
 }
 .New_Peoduct .wrap > h2 {
-  font-family: var(--font-secondary);
+  font-family: $font-secondary;
   font-size: 50px;
   position: relative;
   display: inline;
@@ -201,7 +204,7 @@
   content: "";
   width: 100%;
   height: 3px;
-  background: var(--primary_color);
+  background: $primary_color;
   position: absolute;
   bottom: 13px;
   left: 0px;
@@ -248,7 +251,7 @@
   z-index: 9;
   left: 10px;
   padding: 0px 21px;
-  background: var(--primary_color);
+  background: $primary_color;
   color: #fff;
   transition: all 0.3s linear;
   font-size: 12px;
@@ -256,8 +259,8 @@
 .New_Peoduct .text::before {
   content: "";
   position: absolute;
-  border: 9px solid var(--primary_color);
-  border-color: transparent transparent transparent var(--primary_color);
+  border: 9px solid $primary_color;
+  border-color: transparent transparent transparent $primary_color;
   top: 15px;
 }
 .New_Peoduct .shape {
@@ -286,17 +289,17 @@
 .New_Peoduct .iconPart svg {
   font-size: 38px;
   background: #fff;
-  color: var(--primary_color);
+  color: $primary_color;
   margin-bottom: 10px;
   padding: 8px;
 }
 .New_Peoduct .heading_text {
   font-size: 20px;
   color: #1a133b;
-  font-family: var(--font-secondary);
+  font-family: $font-secondary;
 }
 .New_Peoduct .heading_text:hover {
-  color: var(--primary_color);
+  color: $primary_color;
 }
 
 .New_Peoduct .iconPart a:nth-last-child(4),
@@ -343,7 +346,7 @@
   font-size: 18px;
   line-height: 28px;
   margin-top: 11px;
-  color: var(--text-color);
+  color: $text-color;
 }
 .Intro .part_2 .wrap {
   padding: 40px 20px;
@@ -356,7 +359,7 @@
 }
 
 .Intro .part_2 .wrap:hover {
-  box-shadow: 0px 40px 40px 0px rgb(14 17 51 / 10%);
+  box-shadow: 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
 }
 .Intro .part_2 .wrap h2 {
   font-size: 20px;
@@ -366,11 +369,11 @@
 .Intro .part_2 .wrap p {
   font-size: 14px;
   margin-bottom: 20px;
-  color: var(--text-color);
+  color: $text-color;
 }
 .Intro .part_2 .wrap a {
   font-size: 20px;
-  color: var(--text-color);
+  color: $text-color;
 }
 .Intro .wrap .my_button {
   position: relative;
@@ -381,7 +384,7 @@
   position: absolute;
   content: "";
   height: 3px;
-  background: var(--primary_color);
+  background: $primary_color;
   left: 0px;
   bottom: 0;
 }
@@ -391,13 +394,13 @@
 .Intro .icon {
   font-size: 80px;
   margin-bottom: 10px;
-  color: var(--primary_color);
+  color: $primary_color;
 }
 
 .InvestBord {
   margin-top: 150px;
 }
-.InvestBord .part_2{
+.InvestBord .part_2 {
   padding-left: 50px;
 }
 .InvestBord .part_2 .wrap > h2 {
@@ -407,7 +410,7 @@
 }
 .InvestBord .part_2 .wrap > p {
   font-size: 15px;
-  color: var(--text-color);
+  color: $text-color;
   margin-bottom: 10px;
 }
 .InvestBord .part_2 .wrap {
@@ -416,99 +419,173 @@
 .InvestBord .part_2 .counting > div {
   margin-right: 40px;
 }
-.InvestBord .part_2 .counting > div h2{
+.InvestBord .part_2 .counting > div h2 {
   font-size: 40px;
 }
-.InvestBord .part_2 li{
+.InvestBord .part_2 li {
   margin-bottom: 10px;
 }
 
-
-.Testimonial{
-  background: #F4F7FB;
+.Testimonial {
+  background: #f4f7fb;
   margin-top: 150px;
   margin-bottom: 150px;
-  padding:  100px 0;
+  padding: 100px 0;
 }
-.Testimonial .part_1 h2{
- font-size: 40px;
+.Testimonial .part_1 h2 {
+  font-size: 40px;
 }
-.Testimonial .part_1 p{
- font-size: 15px;
- padding: 10px 300px;
+.Testimonial .part_1 p {
+  font-size: 15px;
+  padding: 10px 300px;
 }
-.Testimonial .part_2{
+.Testimonial .part_2 {
   margin-top: 60px;
 }
-.Testimonial .FaQuoteLeft{
+.Testimonial .FaQuoteLeft {
   font-size: 70px;
   color: #ddd;
 }
-.Testimonial .part_2 .wrap p{
+.Testimonial .part_2 .wrap p {
   font-size: 15px;
-  color: var(--text-color);
+  color: $text-color;
   line-height: 30px;
   text-align: justify;
 }
-.Testimonial .rec-item-wrapper{
+.Testimonial .rec-item-wrapper {
   padding: 0 20px !important;
 }
-.Testimonial .name{
+.Testimonial .name {
   font-size: 20px;
-  color: var(--primary_color);
+  color: $primary_color;
 }
-.Testimonial .part_2 .imgBar img{
+.Testimonial .part_2 .imgBar img {
   width: 50px;
-    border-radius: 50%;
+  border-radius: 50%;
 }
-.Contact_Bar{
-  background: var(--primary_color);
+.Contact_Bar {
+  background: $primary_color;
   padding: 80px 0;
 }
-.Contact_Bar h2{
-    font-size: 30px;
-    color: #fff;
-    font-weight: 700;
+.Contact_Bar h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
 }
-.Footer{
+
+// Page info
+
+.PageName {
+  background-image: url(/src/Assets/img/page-title.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+ padding: 80px 0;
+
+
+  span,
+  a {
+   font-size: 25px;
+   font-family: $font-primary !important;
+   font-weight: 700;
+   color: $text-color;
+   &:hover{
+       color: $primary_color;
+   }
+  }
+
+ 
+}
+
+// Shop_Page_products
+
+.Shop_Page_products{
+  .part_1{
+    // margin-top: 100px;
+    h2{
+      font-size: 25px;
+      font-weight: 700;
+      position: relative;
+      &::after{
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: $primary_color;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+      }
+    }
+    .listCategories{
+      margin-top: 30px;
+      li{
+        margin: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+      a{
+        font-size: 15px;
+        font-weight: 600;
+        color: $text-color;
+        font-family: $font-primary !important;
+        &:hover{
+          color: $primary_color;
+        }
+      }
+    }
+    
+  }
+  .part_2{
+    .allItem{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+     .wrap{
+       padding: 10px;
+       margin-bottom: 30px;
+     }
+    }
+  }
+}
+
+
+
+//   Footer Section
+.Footer {
   background: #222222;
   padding: 80px 0;
 }
-.Footer h3{
+.Footer h3 {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
   position: relative;
   display: inline;
-
 }
-.Footer h3::after{
- content: '';
- position: absolute;
- width: 100%;
- height: 2px;
- background: var(--primary_color);
-bottom: -5px;
-left: 0;
+.Footer h3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: $primary_color;
+  bottom: -5px;
+  left: 0;
 }
-.Footer .text{
- margin-top: 20px;
+.Footer .text {
+  margin-top: 20px;
 }
 .Footer .text p,
-.Footer .text li{
- color: #fff;
- font-size: 13px;
+.Footer .text li {
+  color: #fff;
+  font-size: 13px;
 }
-.Footer .text .icon{
- font-size: 16px;
- color: var(--primary_color);
- margin-right: 5px;
+.Footer .text .icon {
+  font-size: 16px;
+  color: $primary_color;
+  margin-right: 5px;
 }
-.footer_Down{
- background: #2C2E2E;
- padding: 18px 0;
- text-align: center;
+.footer_Down {
+  background: #2c2e2e;
+  padding: 18px 0;
+  text-align: center;
 }
-.footer_Down p{
-color: #fff;
+.footer_Down p {
+  color: #fff;
 }

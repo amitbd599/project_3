@@ -31,7 +31,7 @@ const Header = () => {
                   <a href="">Page</a>
                   <ul>
                     <li>
-                      <a href="#">Item</a>
+                      <a href="/shop-page">Shop Page</a>
                     </li>
                   </ul>
                 </li>
