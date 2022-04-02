@@ -644,6 +644,17 @@
   color: #dd131a;
 }
 
+.Shop_Page_products .part_2 .dropdown .btn-primary {
+  color: #4d4d4d;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.Shop_Page_products .part_2 .dropdown .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.05rem rgba(119, 119, 119, 0.5);
+          box-shadow: 0 0 0 0.05rem rgba(119, 119, 119, 0.5);
+}
+
 .Shop_Page_products .part_2 .allItem {
   display: -ms-grid;
   display: grid;

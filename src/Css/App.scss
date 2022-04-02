@@ -534,6 +534,16 @@ $font-secondary: "Ramaraja", serif;
     
   }
   .part_2{
+    .dropdown{
+      .btn-primary {
+        color: $text-color;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        &:focus {
+          box-shadow: 0 0 0 0.05rem rgba(119, 119, 119, 0.5);
+      }
+    }
+    }
     .allItem{
       display: grid;
       grid-template-columns: repeat(4, 1fr);

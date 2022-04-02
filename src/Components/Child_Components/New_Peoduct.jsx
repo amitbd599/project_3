@@ -14,7 +14,7 @@ const New_Peoduct = () => {
 console.log(product);
 useEffect(() => {
   const url = 'DataBase/ProductData.json';
-  axios.get(url).then((res) => setProduct(res.data));
+  axios.get(url).then((res) => setProduct(res.data.slice(0,8)));
 }, []);
 
 
