@@ -1,14 +1,34 @@
-import React from "react";
+import axios, { Axios } from "axios";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-
+import { AiOutlineClose } from "react-icons/ai";
+import {
+  IoIosRemoveCircleOutline,
+  IoIosAddCircleOutline,
+} from "react-icons/io";
 const Cart_Product = () => {
+  const [value, setValue] = useState(0);
+  const increaseQty = () => {
+    setValue(value + 1);
+  };
+  const decreaseQty = () => {
+    if (value > 0) {
+      setValue(value - 1);
+    }
+  };
+
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const url = "DataBase/ProductData.json";
+    axios.get(url).then((res) => setData(res.data.slice(0, 6)));
+  }, []);
   return (
     <Container className="Cart_Product">
       <Row>
         <Col>
           <div className="tableBox">
             <table>
-              <thead>
+              <thead className="cart-header">
                 <tr>
                   <th className="ProductName">Product Name</th>
                   <th className="Price">Price</th>
@@ -18,40 +38,52 @@ const Cart_Product = () => {
                 </tr>
               </thead>
 
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="thumb-box">
-                      {" "}
-                      <a href="shop-details-1.html" class="thumb">
-                        <img
-                          src="assets/images/shop/cart-product-thumb-1.jpg"
-                          alt=""
-                        />
-                      </a>{" "}
-                      <a href="shop-details-1.html" class="title">
-                        <h5> Leather Bag </h5>
-                      </a>{" "}
-                    </div>
-                  </td>
-                  <th>$250.00</th>
-                  <td class="qty">
-                    <div class="qtySelector text-center">
-                      {" "}
-                      <span class="decreaseQty">
-                        <i class="flaticon-minus"></i>{" "}
-                      </span>{" "}
-                      <input type="number" class="qtyValue" value="1" />{" "}
-                      <span class="increaseQty">
+              {data.map((data) => (
+                <tbody className="classBody">
+                  <tr>
+                    <td>
+                      <div class="thumb-box">
                         {" "}
-                        <i class="flaticon-plus"></i>{" "}
-                      </span>{" "}
-                    </div>
-                  </td>
-                  <th>2</th>
-                  <th>2</th>
-                </tr>
-              </tbody>
+                        <a href="shop-details-1.html" class="thumb">
+                          <img
+                            src={data.img}
+                            alt=""
+                          />
+                        </a>{" "}
+                        <a href="shop-details-1.html" class="title">
+                          <h5> {data.title} </h5>
+                        </a>{" "}
+                      </div>
+                    </td>
+                    <td>$250.00</td>
+                    <td class="qty">
+                      <div class="qtySelector ">
+                        {" "}
+                        <span class="decreaseQty">
+                          <IoIosRemoveCircleOutline
+                            className="icon"
+                            onClick={decreaseQty}
+                          />
+                        </span>
+                        <input type="text" class="qtyValue" value={value} />
+                        <span class="increaseQty">
+                          <IoIosAddCircleOutline
+                            className="icon"
+                            onClick={increaseQty}
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>$250</td>
+                    <td>
+                      <AiOutlineClose />
+                    </td>
+                  </tr>
+                </tbody>
+              ))}
+
+
+
             </table>
           </div>
         </Col>

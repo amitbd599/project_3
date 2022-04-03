@@ -586,9 +586,9 @@ $font-secondary: "Ramaraja", serif;
           width: 100px;
           height: auto;
         }
-        .textitem{
+        .textitem {
           margin-left: 15px;
-          a{
+          a {
             font-size: 15px;
             font-weight: 600;
             margin-bottom: 10px;
@@ -623,7 +623,7 @@ $font-secondary: "Ramaraja", serif;
         margin-bottom: 30px;
       }
     }
-    .iconPart{
+    .iconPart {
       top: 40px;
     }
   }
@@ -646,6 +646,141 @@ $font-secondary: "Ramaraja", serif;
   }
 }
 
+// Cart_Product
+
+.Cart_Product {
+  margin-top: 50px;
+  table {
+    min-width: 100%;
+    .ProductName,
+    .Price,
+    .Quantity,
+    .Subtotal,
+    .hide_me {
+      font-size: 20px;
+      font-weight: 500;
+      padding: 15px 0;
+    }
+  }
+
+  .cart-header {
+    background: #fff;
+    border: 1px solid #ddd;
+    th {
+      padding: 20px 30px;
+    }
+  }
+  .classBody {
+    background: #fff;
+    border: 1px solid #ddd;
+    .thumb-box {
+      display: flex;
+      align-items: center;
+      img {
+        width: 100px;
+      }
+    }
+    td {
+      padding: 20px 30px;
+      h5 {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+      .qtyValue {
+        padding: 10px;
+        width: 70px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+      .increaseQty,
+      .decreaseQty {
+        .icon {
+          font-size: 30px;
+          padding: 4px;
+          margin: 0 10px;
+          cursor: pointer;
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Cart_CouponCode {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  .part_1 {
+    input {
+      padding: 15px;
+    }
+  }
+  .part_2 {
+    margin-top: 15px;
+    text-align: end;
+  }
+  .wrapCartTotal {
+    margin-top: 80px;
+    h2 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    table {
+      margin-top: 30px;
+      width: 100%;
+      // border: 1px solid #ddd;
+      tr {
+        border: 1px solid #ddd;
+      }
+      th {
+        padding: 25px;
+        font-size: 14px;
+        font-weight: normal;
+        .form-check {
+          padding-bottom: 20px;
+          font-weight: 600;
+        }
+        .form-check-input:checked {
+          background-color: $primary_color;
+          border-color: $primary_color;
+        }
+        .text {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .shipText {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .wrapCheckOut{
+    margin-top: 80px;
+    h2{
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .wrap{
+      margin-top: 30px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      li{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .totalPrice{
+          font-size: 20px;
+          font-weight: 600;
+          color: $primary_color;
+        }
+      }
+      hr{
+        color: rgb(177, 177, 177);
+      }
+    }
+  }
+}
 //   Footer Section
 .Footer {
   background: #222222;

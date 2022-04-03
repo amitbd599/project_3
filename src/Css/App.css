@@ -784,6 +784,172 @@
   color: #4d4d4d;
 }
 
+.Cart_Product {
+  margin-top: 50px;
+}
+
+.Cart_Product table {
+  min-width: 100%;
+}
+
+.Cart_Product table .ProductName,
+.Cart_Product table .Price,
+.Cart_Product table .Quantity,
+.Cart_Product table .Subtotal,
+.Cart_Product table .hide_me {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 0;
+}
+
+.Cart_Product .cart-header {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.Cart_Product .cart-header th {
+  padding: 20px 30px;
+}
+
+.Cart_Product .classBody {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.Cart_Product .classBody .thumb-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Cart_Product .classBody .thumb-box img {
+  width: 100px;
+}
+
+.Cart_Product .classBody td {
+  padding: 20px 30px;
+}
+
+.Cart_Product .classBody td h5 {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.Cart_Product .classBody td .qtyValue {
+  padding: 10px;
+  width: 70px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.Cart_Product .classBody td .increaseQty .icon,
+.Cart_Product .classBody td .decreaseQty .icon {
+  font-size: 30px;
+  padding: 4px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.Cart_Product .classBody td .increaseQty .icon:hover,
+.Cart_Product .classBody td .decreaseQty .icon:hover {
+  color: #dd131a;
+}
+
+.Cart_CouponCode {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.Cart_CouponCode .part_1 input {
+  padding: 15px;
+}
+
+.Cart_CouponCode .part_2 {
+  margin-top: 15px;
+  text-align: end;
+}
+
+.Cart_CouponCode .wrapCartTotal {
+  margin-top: 80px;
+}
+
+.Cart_CouponCode .wrapCartTotal h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.Cart_CouponCode .wrapCartTotal table {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.Cart_CouponCode .wrapCartTotal table tr {
+  border: 1px solid #ddd;
+}
+
+.Cart_CouponCode .wrapCartTotal table th {
+  padding: 25px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.Cart_CouponCode .wrapCartTotal table th .form-check {
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.Cart_CouponCode .wrapCartTotal table th .form-check-input:checked {
+  background-color: #dd131a;
+  border-color: #dd131a;
+}
+
+.Cart_CouponCode .wrapCartTotal table th .text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.Cart_CouponCode .wrapCartTotal table th .shipText {
+  font-weight: 600;
+}
+
+.Cart_CouponCode .wrapCheckOut {
+  margin-top: 80px;
+}
+
+.Cart_CouponCode .wrapCheckOut h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.Cart_CouponCode .wrapCheckOut .wrap {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.Cart_CouponCode .wrapCheckOut .wrap li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Cart_CouponCode .wrapCheckOut .wrap li .totalPrice {
+  font-size: 20px;
+  font-weight: 600;
+  color: #dd131a;
+}
+
+.Cart_CouponCode .wrapCheckOut .wrap hr {
+  color: #b1b1b1;
+}
+
 .Footer {
   background: #222222;
   padding: 80px 0;

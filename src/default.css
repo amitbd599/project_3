@@ -1624,8 +1624,11 @@ img {
   /* padding-right: 0px;
     padding-left: 0px; */
 }
+input {
+  border: 1px solid #ddd;
+}
 input:focus-visible {
-  outline-color: #ddd0;
+  outline-color: rgb(197, 197, 197);
 }
 
 .theme-primary-color {
