@@ -6,7 +6,9 @@ $font-secondary: "Ramaraja", serif;
 * {
   box-sizing: border-box;
 }
-
+.container {
+  max-width: 1200px !important;
+}
 .App {
   overflow: hidden !important;
 }
@@ -479,34 +481,31 @@ $font-secondary: "Ramaraja", serif;
   background-image: url(/src/Assets/img/page-title.jpg);
   background-repeat: no-repeat;
   background-position: center;
- padding: 80px 0;
-
+  padding: 80px 0;
 
   span,
   a {
-   font-size: 25px;
-   font-family: $font-primary !important;
-   font-weight: 700;
-   color: $text-color;
-   &:hover{
-       color: $primary_color;
-   }
+    font-size: 25px;
+    font-family: $font-primary !important;
+    font-weight: 700;
+    color: $text-color;
+    &:hover {
+      color: $primary_color;
+    }
   }
-
- 
 }
 
 // Shop_Page_products
 
-.Shop_Page_products{
-  .part_1{
+.Shop_Page_products {
+  .part_1 {
     // margin-top: 100px;
-    h2{
+    h2 {
       font-size: 25px;
       font-weight: 700;
       position: relative;
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         width: 100%;
         height: 3px;
         background: $primary_color;
@@ -515,47 +514,134 @@ $font-secondary: "Ramaraja", serif;
         bottom: -8px;
       }
     }
-    .listCategories{
+    .listCategories {
       margin-top: 30px;
-      li{
+      li {
         margin: 10px 0;
         border-bottom: 1px solid #ddd;
       }
-      a{
+      a {
         font-size: 15px;
         font-weight: 600;
         color: $text-color;
         font-family: $font-primary !important;
-        &:hover{
+        &:hover {
           color: $primary_color;
         }
       }
     }
-    
+    .filter {
+      margin-top: 50px;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 3px;
+          background: $primary_color;
+          position: absolute;
+          left: 0;
+          bottom: -8px;
+        }
+      }
+      .items {
+        margin-top: 30px;
+        li {
+          margin: 10px 0;
+          border-bottom: 1px solid #ddd;
+        }
+        a {
+          font-size: 15px;
+          font-weight: 600;
+          color: $text-color;
+          font-family: $font-primary !important;
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+    .Product_Tags {
+      .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        a {
+          font-size: 14px;
+          padding: 5px;
+          margin: 3px;
+          background: #f3f3f3;
+          text-align: center;
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+    .top_rated_products {
+      .item {
+        margin-bottom: 20px;
+        .img {
+          width: 100px;
+          height: auto;
+        }
+        .textitem{
+          margin-left: 15px;
+          a{
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
   }
-  .part_2{
-    .dropdown{
+  .part_2 {
+    .ShortItems {
+      justify-content: space-between;
+      p {
+        font-size: 16px;
+        color: $text-color;
+      }
+    }
+    .dropdown {
       .btn-primary {
         color: $text-color;
         background-color: #fff;
         border: 1px solid #ddd;
         &:focus {
           box-shadow: 0 0 0 0.05rem rgba(119, 119, 119, 0.5);
+        }
       }
     }
-    }
-    .allItem{
+    .allItem {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-     .wrap{
-       padding: 10px;
-       margin-bottom: 30px;
-     }
+      .wrap {
+        padding: 10px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .paginationData {
+    margin-top: 80px;
+    text-align: center;
+    a {
+      font-size: 18px;
+      background: $primary_color;
+      margin: 0 5px;
+      padding: 5px 15px;
+      color: #fff;
+      border-radius: 5px;
+      border: 2px solid $primary_color;
+      &:hover {
+        background: #fff;
+        color: $text-color;
+      }
     }
   }
 }
-
-
 
 //   Footer Section
 .Footer {
