@@ -9,6 +9,7 @@ import './default.css';
 import './Css/App.css';
 import Home from "./Page/Home";
 import Shop_Page from "./Page/Shop_Page";
+import Cart_Page from "./Page/Cart_Page";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route exact path="/shop-page">
             <Shop_Page />
+          </Route>
+          <Route exact path="/cart">
+            <Cart_Page />
           </Route>
           
         </Switch>

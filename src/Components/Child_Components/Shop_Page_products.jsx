@@ -16,7 +16,7 @@ import { BsChevronDoubleLeft } from "react-icons/bs";
 
 const Shop_Page_products = () => {
   const [data, setData] = useState([]);
-  const redData = data.slice(0, 2);
+  const redData = data.slice(0, 3);
 
   useEffect(() => {
     const url = "DataBase/ProductData.json";
