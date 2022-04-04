@@ -950,6 +950,170 @@
   color: #b1b1b1;
 }
 
+.AboutPageData .CompanyInfo {
+  padding: 70px 0;
+  background: #f6f6f6;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.AboutPageData .CompanyInfo .part_1 .imgFile {
+  overflow: hidden;
+}
+
+.AboutPageData .CompanyInfo .part_1 .imgFile .img {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.AboutPageData .CompanyInfo .part_1 .imgFile .img::after {
+  background: rgba(26, 26, 26, 0.466);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+
+.AboutPageData .CompanyInfo .part_1 .imgFile .img:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.AboutPageData .CompanyInfo .part_1 .imgFile .img:hover::after {
+  background: rgba(26, 26, 26, 0);
+}
+
+.AboutPageData .CompanyInfo .part_2 {
+  margin-top: 20px;
+}
+
+.AboutPageData .CompanyInfo .part_2 .wrap {
+  padding: 0 50px;
+}
+
+.AboutPageData .CompanyInfo .part_2 .wrap h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #dd131a;
+  display: inline;
+  position: relative;
+}
+
+.AboutPageData .CompanyInfo .part_2 .wrap h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #dd131a;
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+}
+
+.AboutPageData .CompanyInfo .part_2 .wrap h1 {
+  margin-top: 35px;
+  font-family: "Ramaraja", serif;
+  font-size: 50px;
+}
+
+.AboutPageData .CompanyInfo .part_2 .list {
+  margin-top: 20px;
+}
+
+.AboutPageData .CompanyInfo .part_2 .list p {
+  padding: 5px 0;
+}
+
+.AboutPageData .CompanyInfo .part_2 .BsArrowRightCircleFill {
+  color: #dd131a;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.AboutPageData .mission {
+  background: #222222;
+  padding: 120px 0;
+}
+
+.AboutPageData .mission .part_1 {
+  margin-top: 25px;
+}
+
+.AboutPageData .mission .part_1 h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: inline;
+  position: relative;
+}
+
+.AboutPageData .mission .part_1 h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #dd131a;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.AboutPageData .mission .part_1 p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.AboutPageData .mission .part_2 .wrap {
+  text-align: end;
+}
+
+.AboutPageData .mission .part_2 .imgFile .img {
+  position: relative;
+}
+
+.AboutPageData .mission .part_2 .imgFile .img .imgFile_1 {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.AboutPageData .mission .part_2 .imgFile .img .text {
+  position: absolute;
+  left: 1px;
+  top: 200px;
+  width: 300px;
+  background: #fff;
+  padding: 30px 20px;
+  text-align: start;
+}
+
+.AboutPageData .mission .part_2 .imgFile .img .text h2 {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+.AboutPageData .mission .part_2 .imgFile .img .text h5 {
+  font-size: 20px;
+  font-family: "Ramaraja", serif;
+  color: #dd131a;
+  margin-top: 20px;
+}
+
+.AboutPageData .mission .part_2 .imgFile .img .text p {
+  margin-top: -5px;
+  font-size: 12px;
+}
+
 .Footer {
   background: #222222;
   padding: 80px 0;

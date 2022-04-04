@@ -6,6 +6,7 @@ import {
   IoIosRemoveCircleOutline,
   IoIosAddCircleOutline,
 } from "react-icons/io";
+
 const Cart_Product = () => {
   const [value, setValue] = useState(0);
   const increaseQty = () => {
@@ -16,6 +17,9 @@ const Cart_Product = () => {
       setValue(value - 1);
     }
   };
+  let handleChange = (e)=>{
+    setValue(e.target.value);
+   }
 
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -65,7 +69,7 @@ const Cart_Product = () => {
                             onClick={decreaseQty}
                           />
                         </span>
-                        <input type="text" class="qtyValue" value={value} />
+                        <input type="text" class="qtyValue" value={value} onChange={handleChange}/>
                         <span class="increaseQty">
                           <IoIosAddCircleOutline
                             className="icon"
