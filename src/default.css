@@ -1630,6 +1630,13 @@ input {
 input:focus-visible {
   outline-color: rgb(197, 197, 197);
 }
+.form-control:focus {
+  color: #212529;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #ddd;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0);
+}
 
 .theme-primary-color {
   color: #ED0F0F !important;

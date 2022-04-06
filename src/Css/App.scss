@@ -1073,7 +1073,10 @@ $font-secondary: "Ramaraja", serif;
 .BlogData {
   margin-top: 100px;
   .part_1 {
-    margin-bottom: 60px;
+    
+    .wrap{
+      margin-bottom: 60px;
+    }
     .img {
     }
     .textBody {
@@ -1118,6 +1121,7 @@ $font-secondary: "Ramaraja", serif;
   }
   .part_2 {
     .wrap {
+      padding-left: 20px;
       .searchBar {
         input {
           padding: 10px;
@@ -1132,6 +1136,69 @@ $font-secondary: "Ramaraja", serif;
           font-weight: 600;
           border: 1px solid $primary_color;
         }
+      }
+      .reacentPost{
+        h2{
+          font-size: 25px;
+          font-weight: 600;
+          margin-top: 50px;
+        }
+        .item{
+          margin-top: 15px;
+        }
+        a{
+          font-size: 15px;
+          font-family: $font-primary;
+          padding: 15px 0;
+          font-weight: 500;
+          color: $text-color;
+          &:hover{
+            color: $primary_color;
+          }
+        }
+      }
+      .comments{
+        margin-top: 60px;
+        h2{
+          font-size: 25px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        p,a{
+          font-size: 15px;
+          margin: 15px 0;
+          color: $text-color;
+        }
+        a, .icon{
+          font-family: $font-primary;
+          font-weight: 600;
+          color: $primary_color;
+        }
+
+      }
+      .archives,.Categories, .Meta{
+        margin-top: 60px;
+        h2{
+          font-size: 25px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        li{
+          font-size: 15px;
+          margin: 20px 0;
+          
+        }
+        a{
+          color: $text-color;
+          &:hover{
+            color: $primary_color;
+          }
+        }
+       
+
+      }
+      hr{
+        height: 2px;
       }
     }
   }

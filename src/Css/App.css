@@ -1282,7 +1282,7 @@
   margin-top: 100px;
 }
 
-.BlogData .part_1 {
+.BlogData .part_1 .wrap {
   margin-bottom: 60px;
 }
 
@@ -1338,6 +1338,10 @@
   margin-bottom: 35px;
 }
 
+.BlogData .part_2 .wrap {
+  padding-left: 20px;
+}
+
 .BlogData .part_2 .wrap .searchBar input {
   padding: 10px;
   border-radius: 10px;
@@ -1352,6 +1356,77 @@
   color: #fff;
   font-weight: 600;
   border: 1px solid #dd131a;
+}
+
+.BlogData .part_2 .wrap .reacentPost h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.BlogData .part_2 .wrap .reacentPost .item {
+  margin-top: 15px;
+}
+
+.BlogData .part_2 .wrap .reacentPost a {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  padding: 15px 0;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.BlogData .part_2 .wrap .reacentPost a:hover {
+  color: #dd131a;
+}
+
+.BlogData .part_2 .wrap .comments {
+  margin-top: 60px;
+}
+
+.BlogData .part_2 .wrap .comments h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.BlogData .part_2 .wrap .comments p, .BlogData .part_2 .wrap .comments a {
+  font-size: 15px;
+  margin: 15px 0;
+  color: #4d4d4d;
+}
+
+.BlogData .part_2 .wrap .comments a, .BlogData .part_2 .wrap .comments .icon {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #dd131a;
+}
+
+.BlogData .part_2 .wrap .archives, .BlogData .part_2 .wrap .Categories, .BlogData .part_2 .wrap .Meta {
+  margin-top: 60px;
+}
+
+.BlogData .part_2 .wrap .archives h2, .BlogData .part_2 .wrap .Categories h2, .BlogData .part_2 .wrap .Meta h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.BlogData .part_2 .wrap .archives li, .BlogData .part_2 .wrap .Categories li, .BlogData .part_2 .wrap .Meta li {
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.BlogData .part_2 .wrap .archives a, .BlogData .part_2 .wrap .Categories a, .BlogData .part_2 .wrap .Meta a {
+  color: #4d4d4d;
+}
+
+.BlogData .part_2 .wrap .archives a:hover, .BlogData .part_2 .wrap .Categories a:hover, .BlogData .part_2 .wrap .Meta a:hover {
+  color: #dd131a;
+}
+
+.BlogData .part_2 .wrap hr {
+  height: 2px;
 }
 
 .Footer {
