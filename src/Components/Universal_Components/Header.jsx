@@ -18,13 +18,13 @@ const Header = () => {
               </a>
               <ul>
                 <li>
-                  <a href="">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="">About</a>
+                <a href="/about">About Us</a>
                 </li>
                 <li>
-                  <a href="">Service 4</a>
+                  <a href="/blog">Blog</a>
                 </li>
 
                 <li class="drop-right">
@@ -36,9 +36,7 @@ const Header = () => {
                     <li>
                       <a href="/cart">Cart</a>
                     </li>
-                    <li>
-                      <a href="/about">About Us</a>
-                    </li>
+                    
                   </ul>
                 </li>
                 <li>

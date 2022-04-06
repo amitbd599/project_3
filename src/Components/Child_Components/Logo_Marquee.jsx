@@ -12,8 +12,8 @@ import logo_8 from '../../Assets/img/logoSlider/8.jpg';
 const Logo_Marquee = () => {
   return (
     <div className="Logo_Marquee">
-       <hr/>
-      <Marquee className="mt-100 mb-100" >
+     
+      <Marquee >
           <img src={logo_1} alt="" />
           <img src={logo_2} alt="" />
           <img src={logo_3} alt="" />
@@ -23,7 +23,7 @@ const Logo_Marquee = () => {
           <img src={logo_7} alt="" />
           <img src={logo_8} alt="" />
       </Marquee>
-      <hr />
+     
     </div>
   );
 };

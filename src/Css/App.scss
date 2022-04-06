@@ -185,8 +185,9 @@ $font-secondary: "Ramaraja", serif;
 }
 
 .Logo_Marquee {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  background: #f6f6f6;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .Logo_Marquee img {
   margin: 0 20px;
@@ -910,7 +911,6 @@ $font-secondary: "Ramaraja", serif;
               font-size: 30px;
               font-weight: 600;
               position: relative;
-             
             }
             h5 {
               font-size: 20px;
@@ -923,6 +923,214 @@ $font-secondary: "Ramaraja", serif;
               font-size: 12px;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.About_OurTeam {
+  margin-top: 100px;
+  .part_1 {
+    text-align: center;
+    padding: 0 200px;
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      position: relative;
+      display: inline;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background: $primary_color;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+      }
+    }
+    p {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .part_2 {
+    margin-top: 100px;
+    .item {
+      text-align: center;
+      .imgFile {
+        position: relative;
+
+        img {
+          border-radius: 50%;
+        }
+        .icon {
+          // with a div
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%);
+          z-index: 99;
+          overflow: hidden;
+
+          a {
+            color: #fff;
+            font-size: 25px;
+            top: 30px;
+            position: relative;
+            display: inline-block;
+            transition: all 0.1s linear;
+            padding: 5px 3px;
+          }
+        }
+        &::after {
+          position: absolute;
+          background: #22222200;
+          content: "";
+          left: 0;
+          top: 0;
+          z-index: 9;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          transition: all 0.3s linear;
+        }
+        &:hover::after {
+          background: #000000c4;
+        }
+        &:hover {
+          .icon a {
+            &:nth-child(1) {
+              top: 0px;
+
+              transition: all 0.35s linear;
+            }
+            &:nth-child(2) {
+              top: 0px;
+              transition: all 0.4s linear;
+            }
+            &:nth-child(3) {
+              top: 0px;
+              transition: all 0.5s linear;
+            }
+            &:nth-child(4) {
+              top: 0px;
+              transition: all 0.6s linear;
+            }
+          }
+          & a:hover {
+            color: $primary_color;
+            transform: scale(1.2);
+            transition: all 0.1s linear;
+          }
+        }
+      }
+      h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 15px;
+        color: $text-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Counter About Page
+.Counter {
+  margin-bottom: 100px;
+  .wrap {
+    text-align: center;
+    .icon svg {
+      font-size: 150px;
+      background: $primary_color;
+      padding: 40px;
+      border-radius: 50%;
+      color: #fff;
+      margin-bottom: 30px;
+      &:hover {
+        color: #000;
+      }
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: $text-color;
+    }
+  }
+}
+
+// BlogData
+
+.BlogData {
+  margin-top: 100px;
+  .part_1 {
+    margin-bottom: 60px;
+    .img {
+    }
+    .textBody {
+      padding: 20px;
+      .dateSection {
+        display: flex;
+        .adminBox,
+        .commentSection {
+          margin-left: 15px;
+        }
+        .dateData,
+        .adminBox,
+        .commentSection {
+          .icon {
+            font-size: 16px;
+            margin: 0 5px;
+          }
+          .icon {
+            font-size: 16px;
+            margin: 0 5px;
+            color: $primary_color;
+          }
+          .text {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .textFile {
+      margin-top: 20px;
+      h2 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 15px;
+        text-align: justify;
+        margin-bottom: 35px;
+      }
+    }
+  }
+  .part_2 {
+    .wrap {
+      .searchBar {
+        input {
+          padding: 10px;
+          border-radius: 10px;
+        }
+        .input-group-text{
+          background: $primary_color;
+          cursor: pointer;
+        }
+        .icon{
+          color: #fff;
+          font-weight: 600;
+          border: 1px solid $primary_color;
         }
       }
     }

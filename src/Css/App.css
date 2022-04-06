@@ -236,8 +236,9 @@
 }
 
 .Logo_Marquee {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  background: #f6f6f6;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .Logo_Marquee img {
@@ -1112,6 +1113,245 @@
 .AboutPageData .mission .part_2 .imgFile .img .text p {
   margin-top: -5px;
   font-size: 12px;
+}
+
+.About_OurTeam {
+  margin-top: 100px;
+}
+
+.About_OurTeam .part_1 {
+  text-align: center;
+  padding: 0 200px;
+}
+
+.About_OurTeam .part_1 h2 {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  display: inline;
+}
+
+.About_OurTeam .part_1 h2::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #dd131a;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.About_OurTeam .part_1 p {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.About_OurTeam .part_2 {
+  margin-top: 100px;
+}
+
+.About_OurTeam .part_2 .item {
+  text-align: center;
+}
+
+.About_OurTeam .part_2 .item .imgFile {
+  position: relative;
+}
+
+.About_OurTeam .part_2 .item .imgFile img {
+  border-radius: 50%;
+}
+
+.About_OurTeam .part_2 .item .imgFile .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 99;
+  overflow: hidden;
+}
+
+.About_OurTeam .part_2 .item .imgFile .icon a {
+  color: #fff;
+  font-size: 25px;
+  top: 30px;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  padding: 5px 3px;
+}
+
+.About_OurTeam .part_2 .item .imgFile::after {
+  position: absolute;
+  background: #22222200;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.About_OurTeam .part_2 .item .imgFile:hover::after {
+  background: #000000c4;
+}
+
+.About_OurTeam .part_2 .item .imgFile:hover .icon a:nth-child(1) {
+  top: 0px;
+  -webkit-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+}
+
+.About_OurTeam .part_2 .item .imgFile:hover .icon a:nth-child(2) {
+  top: 0px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.About_OurTeam .part_2 .item .imgFile:hover .icon a:nth-child(3) {
+  top: 0px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.About_OurTeam .part_2 .item .imgFile:hover .icon a:nth-child(4) {
+  top: 0px;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+.About_OurTeam .part_2 .item .imgFile:hover a:hover {
+  color: #dd131a;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.About_OurTeam .part_2 .item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.About_OurTeam .part_2 .item p {
+  font-size: 15px;
+  color: #4d4d4d;
+  font-weight: 500;
+}
+
+.Counter {
+  margin-bottom: 100px;
+}
+
+.Counter .wrap {
+  text-align: center;
+}
+
+.Counter .wrap .icon svg {
+  font-size: 150px;
+  background: #dd131a;
+  padding: 40px;
+  border-radius: 50%;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.Counter .wrap .icon svg:hover {
+  color: #000;
+}
+
+.Counter .wrap h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.Counter .wrap p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.BlogData {
+  margin-top: 100px;
+}
+
+.BlogData .part_1 {
+  margin-bottom: 60px;
+}
+
+.BlogData .part_1 .textBody {
+  padding: 20px;
+}
+
+.BlogData .part_1 .textBody .dateSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.BlogData .part_1 .textBody .dateSection .adminBox,
+.BlogData .part_1 .textBody .dateSection .commentSection {
+  margin-left: 15px;
+}
+
+.BlogData .part_1 .textBody .dateSection .dateData .icon,
+.BlogData .part_1 .textBody .dateSection .adminBox .icon,
+.BlogData .part_1 .textBody .dateSection .commentSection .icon {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+.BlogData .part_1 .textBody .dateSection .dateData .icon,
+.BlogData .part_1 .textBody .dateSection .adminBox .icon,
+.BlogData .part_1 .textBody .dateSection .commentSection .icon {
+  font-size: 16px;
+  margin: 0 5px;
+  color: #dd131a;
+}
+
+.BlogData .part_1 .textBody .dateSection .dateData .text,
+.BlogData .part_1 .textBody .dateSection .adminBox .text,
+.BlogData .part_1 .textBody .dateSection .commentSection .text {
+  font-weight: 500;
+}
+
+.BlogData .part_1 .textFile {
+  margin-top: 20px;
+}
+
+.BlogData .part_1 .textFile h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.BlogData .part_1 .textFile p {
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 35px;
+}
+
+.BlogData .part_2 .wrap .searchBar input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.BlogData .part_2 .wrap .searchBar .input-group-text {
+  background: #dd131a;
+  cursor: pointer;
+}
+
+.BlogData .part_2 .wrap .searchBar .icon {
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #dd131a;
 }
 
 .Footer {

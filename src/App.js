@@ -11,6 +11,7 @@ import Home from "./Page/Home";
 import Shop_Page from "./Page/Shop_Page";
 import Cart_Page from "./Page/Cart_Page";
 import AboutPage from "./Page/AboutPage";
+import Blog from "./Page/Blog";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/about">
             <AboutPage />
+          </Route>
+          <Route exact path="/blog">
+            <Blog />
           </Route>
           
         </Switch>
