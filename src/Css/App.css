@@ -1390,43 +1390,123 @@
   margin-bottom: 20px;
 }
 
-.BlogData .part_2 .wrap .comments p, .BlogData .part_2 .wrap .comments a {
+.BlogData .part_2 .wrap .comments p,
+.BlogData .part_2 .wrap .comments a {
   font-size: 15px;
   margin: 15px 0;
   color: #4d4d4d;
 }
 
-.BlogData .part_2 .wrap .comments a, .BlogData .part_2 .wrap .comments .icon {
+.BlogData .part_2 .wrap .comments a,
+.BlogData .part_2 .wrap .comments .icon {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #dd131a;
 }
 
-.BlogData .part_2 .wrap .archives, .BlogData .part_2 .wrap .Categories, .BlogData .part_2 .wrap .Meta {
+.BlogData .part_2 .wrap .archives,
+.BlogData .part_2 .wrap .Categories,
+.BlogData .part_2 .wrap .Meta {
   margin-top: 60px;
 }
 
-.BlogData .part_2 .wrap .archives h2, .BlogData .part_2 .wrap .Categories h2, .BlogData .part_2 .wrap .Meta h2 {
+.BlogData .part_2 .wrap .archives h2,
+.BlogData .part_2 .wrap .Categories h2,
+.BlogData .part_2 .wrap .Meta h2 {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.BlogData .part_2 .wrap .archives li, .BlogData .part_2 .wrap .Categories li, .BlogData .part_2 .wrap .Meta li {
+.BlogData .part_2 .wrap .archives li,
+.BlogData .part_2 .wrap .Categories li,
+.BlogData .part_2 .wrap .Meta li {
   font-size: 15px;
   margin: 20px 0;
 }
 
-.BlogData .part_2 .wrap .archives a, .BlogData .part_2 .wrap .Categories a, .BlogData .part_2 .wrap .Meta a {
+.BlogData .part_2 .wrap .archives a,
+.BlogData .part_2 .wrap .Categories a,
+.BlogData .part_2 .wrap .Meta a {
   color: #4d4d4d;
 }
 
-.BlogData .part_2 .wrap .archives a:hover, .BlogData .part_2 .wrap .Categories a:hover, .BlogData .part_2 .wrap .Meta a:hover {
+.BlogData .part_2 .wrap .archives a:hover,
+.BlogData .part_2 .wrap .Categories a:hover,
+.BlogData .part_2 .wrap .Meta a:hover {
   color: #dd131a;
 }
 
 .BlogData .part_2 .wrap hr {
   height: 2px;
+}
+
+.BlogData .pagination {
+  margin-bottom: 100px;
+}
+
+.BlogData .pagination .wrap li {
+  display: inline;
+}
+
+.BlogData .pagination .wrap li a {
+  padding: 8px 16px;
+  background: #dd131a;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid #dd131a;
+  color: #fff;
+}
+
+.BlogData .pagination .wrap li a:hover {
+  background: transparent;
+  color: #000;
+}
+
+.BlogData .pagination .wrap li .active {
+  background: transparent;
+  color: #000;
+}
+
+.SingleBlogData {
+  margin-top: 100px;
+}
+
+.SingleBlogData .part_1 h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.SingleBlogData .part_1 h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.SingleBlogData .CommentSection {
+  padding: 0 10px;
+}
+
+.SingleBlogData .CommentSection .next_Prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.SingleBlogData .CommentSection .next_Prev .icon {
+  font-size: 16px;
+}
+
+.SingleBlogData .CommentSection .next_Prev a {
+  color: #4d4d4d;
+}
+
+.SingleBlogData .replay img {
+  width: 100px;
 }
 
 .Footer {

@@ -1073,8 +1073,7 @@ $font-secondary: "Ramaraja", serif;
 .BlogData {
   margin-top: 100px;
   .part_1 {
-    
-    .wrap{
+    .wrap {
       margin-bottom: 60px;
     }
     .img {
@@ -1127,79 +1126,139 @@ $font-secondary: "Ramaraja", serif;
           padding: 10px;
           border-radius: 10px;
         }
-        .input-group-text{
+        .input-group-text {
           background: $primary_color;
           cursor: pointer;
         }
-        .icon{
+        .icon {
           color: #fff;
           font-weight: 600;
           border: 1px solid $primary_color;
         }
       }
-      .reacentPost{
-        h2{
+      .reacentPost {
+        h2 {
           font-size: 25px;
           font-weight: 600;
           margin-top: 50px;
         }
-        .item{
+        .item {
           margin-top: 15px;
         }
-        a{
+        a {
           font-size: 15px;
           font-family: $font-primary;
           padding: 15px 0;
           font-weight: 500;
           color: $text-color;
-          &:hover{
+          &:hover {
             color: $primary_color;
           }
         }
       }
-      .comments{
+      .comments {
         margin-top: 60px;
-        h2{
+        h2 {
           font-size: 25px;
           font-weight: 600;
           margin-bottom: 20px;
         }
-        p,a{
+        p,
+        a {
           font-size: 15px;
           margin: 15px 0;
           color: $text-color;
         }
-        a, .icon{
+        a,
+        .icon {
           font-family: $font-primary;
           font-weight: 600;
           color: $primary_color;
         }
-
       }
-      .archives,.Categories, .Meta{
+      .archives,
+      .Categories,
+      .Meta {
         margin-top: 60px;
-        h2{
+        h2 {
           font-size: 25px;
           font-weight: 600;
           margin-bottom: 20px;
         }
-        li{
+        li {
           font-size: 15px;
           margin: 20px 0;
-          
         }
-        a{
+        a {
           color: $text-color;
-          &:hover{
+          &:hover {
             color: $primary_color;
           }
         }
-       
-
       }
-      hr{
+      hr {
         height: 2px;
       }
+    }
+  }
+  .pagination {
+    margin-bottom: 100px;
+    .wrap {
+      li {
+        display: inline;
+
+        a {
+          padding: 8px 16px;
+          background: $primary_color;
+          margin: 5px;
+          border-radius: 5px;
+          border: 2px solid $primary_color;
+          color: #fff;
+          &:hover{
+            background: transparent;
+            color: #000;
+          }
+        }
+        .active{
+          background: transparent;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+// SingleBlogData
+
+.SingleBlogData{
+  margin-top: 100px;
+  .part_1{
+    h2{
+      font-size: 30px;
+      font-weight: 600;
+      margin: 20px 0; 
+    }
+    h4{
+      font-size: 25px;
+      font-weight: 600;
+      margin: 20px 0; 
+    }
+  }
+  .CommentSection{
+    padding: 0 10px;
+    .next_Prev{
+      display: flex;
+      justify-content: space-between;
+      .icon{
+        font-size: 16px;
+      }
+      a{
+        color: $text-color;
+      }
+    }
+  }
+  .replay{
+    img{
+      width: 100px;
     }
   }
 }

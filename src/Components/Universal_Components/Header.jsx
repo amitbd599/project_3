@@ -36,6 +36,9 @@ const Header = () => {
                     <li>
                       <a href="/cart">Cart</a>
                     </li>
+                    <li>
+                      <a href="/single-blog">Single Blog</a>
+                    </li>
                     
                   </ul>
                 </li>
