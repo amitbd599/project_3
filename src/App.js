@@ -13,6 +13,7 @@ import Cart_Page from "./Page/Cart_Page";
 import AboutPage from "./Page/AboutPage";
 import Blog from "./Page/Blog";
 import SingleBlog from "./Page/SingleBlog";
+import Gallery from "./Page/Gallery";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route exact path="/single-blog">
             <SingleBlog />
+          </Route>
+          <Route exact path="/gallery">
+            <Gallery />
           </Route>
           
         </Switch>

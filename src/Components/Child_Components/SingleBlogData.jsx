@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Form, Row } from "react-bootstrap";
 import SideBar from "./SideBar";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -172,27 +172,141 @@ const SingleBlogData = () => {
                     </span>
                   </div>
                 </div>
-                <div className="replay">
-                  <div className="d-flex">
-                    <div className="d-flex justify-content-between">
-                      <div className="imgFile">
-                        <img src="https://i.imgur.com/FfOFeeU.png" alt="" />
+                <div className="topReply">
+                  <div className="mainWrap">
+                    <div className="childWrap">
+                      <div className="d-flex justify-content-between">
+                        <div className="d-flex ">
+                          <div className="imgFile">
+                            <img src="https://i.imgur.com/FfOFeeU.png" alt="" />
+                          </div>
+                          <div className="adminBox">
+                            <p className="name">Rosa Lima</p>
+                            <p className="date">9 January 2022</p>
+                          </div>
+                        </div>
+                        <div className="replyBar">
+                          <Link>Reply</Link>
+                        </div>
                       </div>
-                      <div className="adminBox">
-                        <h4>Admin</h4>
-                        <p>9 January 2022</p>
+                      <div className="text">
+                        <p>
+                          To get started with moderating, editing, and deleting
+                          comments, please visit the Comments screen in the
+                          dashboard.
+                        </p>
                       </div>
-                    </div>
-                    <div className="replayBar">
-                      <p>Replay</p>
                     </div>
                   </div>
-                  <div className="text">
+                  <div className="adminReply">
+                    <div className="childWrap">
+                      <div className="d-flex justify-content-between">
+                        <div className="d-flex ">
+                          <div className="imgFile">
+                            <img src="https://i.imgur.com/ssaIBwF.png" alt="" />
+                          </div>
+                          <div className="adminBox">
+                            <p className="name">Admin</p>
+                            <p className="date">9 January 2022</p>
+                          </div>
+                        </div>
+                        <div className="replyBar">
+                          <Link>Reply</Link>
+                        </div>
+                      </div>
+                      <div className="text">
+                        <p>
+                          To get started with moderating, editing, and deleting
+                          comments, please visit the Comments screen in the
+                          dashboard.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="topReply">
+                  <div className="mainWrap">
+                    <div className="childWrap">
+                      <div className="d-flex justify-content-between">
+                        <div className="d-flex ">
+                          <div className="imgFile">
+                            <img src="https://i.imgur.com/FfOFeeU.png" alt="" />
+                          </div>
+                          <div className="adminBox">
+                            <p className="name">Rosa Lima</p>
+                            <p className="date">9 January 2022</p>
+                          </div>
+                        </div>
+                        <div className="replyBar">
+                          <Link>Reply</Link>
+                        </div>
+                      </div>
+                      <div className="text">
+                        <p>
+                          To get started with moderating, editing, and deleting
+                          comments, please visit the Comments screen in the
+                          dashboard.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Comment Form */}
+
+                <div className="commentForm">
+                  <div className="wrap">
+                    <h2>Leave a Reply</h2>
                     <p>
-                      To get started with moderating, editing, and deleting
-                      comments, please visit the Comments screen in the
-                      dashboard.
+                      Your email address will not be published. Required fields
+                      are marked *
                     </p>
+
+                    <Form>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                      ></Form.Group>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlTextarea1"
+                      >
+                        <Form.Label>Comment **</Form.Label>
+                        <Form.Control as="textarea" rows={3} />
+                      </Form.Group>
+
+                      <div className="d-flex">
+                        <Form.Control
+                          className="mr-10"
+                          type="text"
+                          placeholder="Name *"
+                        />{" "}
+                        <Form.Control
+                          className="ml-5 mr-5"
+                          type="email"
+                          placeholder="E-mail *"
+                        />
+                        <Form.Control
+                          className="ml-10"
+                          type="text"
+                          placeholder="Website"
+                        />
+                      </div>
+                      <Form.Group>
+                        <Form.Check
+                          className="mt-20"
+                          type="checkbox"
+                          id=""
+                          label="Save my name, email, and website in this browser for the next time I comment."
+                        />
+                      </Form.Group>
+                      <Form.Group>
+                        <div className="myBtn mt-30">
+                          <Link className="my-btn-primary" type="submit">Submit</Link>
+                        </div>
+                      </Form.Group>
+                    </Form>
                   </div>
                 </div>
               </div>

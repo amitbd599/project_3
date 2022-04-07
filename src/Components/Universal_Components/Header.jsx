@@ -39,6 +39,9 @@ const Header = () => {
                     <li>
                       <a href="/single-blog">Single Blog</a>
                     </li>
+                    <li>
+                      <a href="/gallery">Gallery</a>
+                    </li>
                     
                   </ul>
                 </li>
