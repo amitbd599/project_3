@@ -42,6 +42,9 @@ const Header = () => {
                     <li>
                       <a href="/gallery">Gallery</a>
                     </li>
+                    <li>
+                      <a href="/faq">FAQ</a>
+                    </li>
                     
                   </ul>
                 </li>

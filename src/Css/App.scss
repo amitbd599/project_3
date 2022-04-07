@@ -1332,6 +1332,7 @@ a,p{
     overflow: hidden;
     z-index: 9999;
     top: 0;
+   
   }
   .model.active{
     visibility: visible;
@@ -1367,6 +1368,9 @@ a,p{
     font-weight: 800;
     cursor: pointer;
     color: $primary_color;
+  }
+  .myGrid{
+    column-count: 3;
   }
 }
 //   Footer Section

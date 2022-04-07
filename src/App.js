@@ -14,6 +14,7 @@ import AboutPage from "./Page/AboutPage";
 import Blog from "./Page/Blog";
 import SingleBlog from "./Page/SingleBlog";
 import Gallery from "./Page/Gallery";
+import Faq from "./Page/Faq";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
           </Route>
           <Route exact path="/gallery">
             <Gallery />
+          </Route>
+          <Route exact path="/faq">
+            <Faq />
           </Route>
           
         </Switch>
