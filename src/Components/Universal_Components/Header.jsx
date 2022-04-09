@@ -49,7 +49,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <a href="/contact">Contact</a>
                 </li>
               </ul>
 			<span className="menu_icon">

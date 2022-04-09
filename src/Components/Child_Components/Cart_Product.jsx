@@ -9,23 +9,27 @@ import {
 
 const Cart_Product = () => {
   const [value, setValue] = useState(0);
-  const increaseQty = () => {
-    setValue(value + 1);
-  };
-  const decreaseQty = () => {
-    if (value > 0) {
-      setValue(value - 1);
-    }
-  };
-  let handleChange = (e)=>{
-    setValue(e.target.value);
-   }
 
   const [data, setData] = useState([]);
   useEffect(() => {
     const url = "DataBase/ProductData.json";
     axios.get(url).then((res) => setData(res.data.slice(0, 6)));
   }, []);
+
+  const increaseQty = () => {
+    setValue(value + 1);
+  };
+  const decreaseQty = (e) => {
+    if(e==data._id){
+      setValue(value - 1);
+    }
+    // if (value > 0) {
+    //   setValue(value - 1);
+    // }
+  };
+  let handleChange = (e) => {
+    setValue(e.target.value);
+  };
   return (
     <Container className="Cart_Product">
       <Row>
@@ -49,10 +53,7 @@ const Cart_Product = () => {
                       <div class="thumb-box">
                         {" "}
                         <a href="shop-details-1.html" class="thumb">
-                          <img
-                            src={data.img}
-                            alt=""
-                          />
+                          <img src={data.img} alt="" />
                         </a>{" "}
                         <a href="shop-details-1.html" class="title">
                           <h5> {data.title} </h5>
@@ -66,10 +67,15 @@ const Cart_Product = () => {
                         <span class="decreaseQty">
                           <IoIosRemoveCircleOutline
                             className="icon"
-                            onClick={decreaseQty}
+                            onClick={(e) => decreaseQty(data._id)}
                           />
                         </span>
-                        <input type="text" class="qtyValue" value={value} onChange={handleChange}/>
+                        <input
+                          type="text"
+                          class="qtyValue"
+                          value={value}
+                          onChange={handleChange}
+                        />
                         <span class="increaseQty">
                           <IoIosAddCircleOutline
                             className="icon"
@@ -85,9 +91,6 @@ const Cart_Product = () => {
                   </tr>
                 </tbody>
               ))}
-
-
-
             </table>
           </div>
         </Col>

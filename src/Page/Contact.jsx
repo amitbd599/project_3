@@ -1,23 +1,22 @@
 import React from "react";
-import FaqData from "../Components/Child_Components/FaqData";
+import ContactData from "../Components/Child_Components/ContactData";
 import Footer from "../Components/Universal_Components/Footer";
+
 import Header from "../Components/Universal_Components/Header";
 import PageName from "../Components/Universal_Components/PageName";
 
-const Faq = () => {
+const Contact = () => {
   return (
     <>
       {/* Header section */}
       <Header></Header>
 
-      {/* Page Name */}
+      {/* Page name */}
 
-      <PageName pageName="FAQ"></PageName>
+      <PageName pageName="Contact"></PageName>
 
-      {/* Faq data */}
-
-      <FaqData></FaqData>
-
+      {/* Contact Data */}
+      <ContactData></ContactData>
 
       {/* Footer */}
 
@@ -26,4 +25,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default Contact;
