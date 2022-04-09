@@ -9,6 +9,8 @@ import { BiShow } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { GoEyeClosed } from "react-icons/go";
+import swal from 'sweetalert';
+
 const New_Peoduct = () => {
   const [product, setProduct] = useState([]);
   const [viewImg, setViewImg] = useState(false);
@@ -23,6 +25,15 @@ const New_Peoduct = () => {
     setActiveImg(e);
     setViewImg(true);
   };
+  const alert=()=>{
+    return swal({
+      title: "Wow great!",
+      text: "Product is now added to Cart!",
+      icon: "success",
+      button: "Got it!",
+      className: "amit"
+    });
+  }
   return (
     <Container className="New_Peoduct">
       <Row>
@@ -63,9 +74,11 @@ const New_Peoduct = () => {
                         onClick={() => viewImgHendel(data.img_Overlay)}
                       />
                     </Link>
-                    <Link to={"/"}>
+                 
+
+                    <Link >
                       {" "}
-                      <BsCartPlusFill className="icon" />
+                      <BsCartPlusFill className="icon" onClick={alert}/>
                     </Link>
                   </div>
                   <img className="img_overflow" src={data.img_Overlay} alt="" />
