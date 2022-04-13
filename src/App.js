@@ -16,11 +16,13 @@ import SingleBlog from "./Page/SingleBlog";
 import Gallery from "./Page/Gallery";
 import Faq from "./Page/Faq";
 import Contact from "./Page/Contact";
+import ScrollToTop from "./Components/Universal_Components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+      <ScrollToTop />
      <Switch>
           <Route exact path="/">
             <Home />

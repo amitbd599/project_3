@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import ScrollToTop from "react-scroll-to-top";
 ReactDOM.render(
   <React.StrictMode>
+     <ScrollToTop smooth/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

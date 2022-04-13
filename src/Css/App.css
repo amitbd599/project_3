@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a,
@@ -17,27 +17,49 @@ p {
   overflow: hidden !important;
 }
 
-.menu {
-  background-color: #fff;
+.Menu {
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+  z-index: 9999;
 }
 
-.stellarnav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.Menu .nav-link {
+  color: #000 !important;
+  font-size: 16px;
+  padding: 14px 20px !important;
 }
 
-.stellarnav li a {
-  font-family: "Ramaraja", serif !important;
-  font-size: 20px;
+.Menu.sticky {
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
+
+
+.navbar-expand-lg {
+  padding: 15px 0;
+}
+.dropdown-menu {
+  top: 66px !important;
+  border: none;
+  width: 200px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.dropdown-item {
+  padding-top: 15px;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #ff3d3d;
+  background-color: transparent;
+}
 .menu_icon a {
   margin-left: 10px;
   font-size: 18px;
@@ -92,7 +114,7 @@ p {
 .Hero_Image .TiChartPie {
   font-size: 80px;
   -webkit-animation: TiChartPie 2s linear 2s infinite alternate;
-          animation: TiChartPie 2s linear 2s infinite alternate;
+  animation: TiChartPie 2s linear 2s infinite alternate;
   position: absolute;
   right: 125px;
   color: #dd131a;
@@ -102,22 +124,22 @@ p {
 @-webkit-keyframes TiChartPie {
   0% {
     -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
+    transform: translateX(-50px);
   }
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 @keyframes TiChartPie {
   0% {
     -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
+    transform: translateX(-50px);
   }
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -175,9 +197,9 @@ p {
 .Hero_Card .wrap:hover {
   background: #dd131a;
   -webkit-box-shadow: 6px 6px 20px #c7c7c7, -6px -6px 20px #f9f9f9;
-          box-shadow: 6px 6px 20px #c7c7c7, -6px -6px 20px #f9f9f9;
+  box-shadow: 6px 6px 20px #c7c7c7, -6px -6px 20px #f9f9f9;
   -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
 .Hero_Card .wrap:hover h2,
@@ -210,7 +232,7 @@ p {
 
 .Shop_Image_Card .wrap:hover img {
   -webkit-transform: scale(110%);
-          transform: scale(110%);
+  transform: scale(110%);
 }
 
 .Shop_Image_Card .wrap .headText_2 {
@@ -270,20 +292,24 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.664);
-  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease, -webkit-transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease, visibility 0.4s ease, -webkit-transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease,
+    -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   visibility: hidden;
   opacity: 0;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   overflow: hidden;
   z-index: 999999;
   top: 0;
@@ -293,7 +319,7 @@ p {
   visibility: visible;
   opacity: 1;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .New_Peoduct .GoEyeClosed {
@@ -303,13 +329,13 @@ p {
   top: 50px;
   font-size: 40px;
   color: #fff;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .New_Peoduct .GoEyeClosed:hover {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   color: #dd131a;
 }
 
@@ -361,7 +387,7 @@ p {
 
 .New_Peoduct .img_overflow {
   -webkit-transform: translateX(-500px);
-          transform: translateX(-500px);
+  transform: translateX(-500px);
   position: absolute;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
@@ -372,7 +398,7 @@ p {
 
 .New_Peoduct .wrap:hover .img_overflow {
   -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
   opacity: 1;
 }
 
@@ -448,29 +474,29 @@ p {
 .New_Peoduct .iconPart a:nth-last-child(2),
 .New_Peoduct .iconPart a:nth-last-child(1) {
   -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  transform: translateX(50px);
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
 
 .New_Peoduct .iconPart a:nth-last-child(4) {
   -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  transition-delay: 0.15s;
 }
 
 .New_Peoduct .iconPart a:nth-last-child(3) {
   -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
 .New_Peoduct .iconPart a:nth-last-child(2) {
   -webkit-transition-delay: 0.35s;
-          transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
 
 .New_Peoduct .iconPart a:nth-last-child(1) {
   -webkit-transition-delay: 0.45s;
-          transition-delay: 0.45s;
+  transition-delay: 0.45s;
 }
 
 .New_Peoduct .wrap:hover .iconPart a:nth-last-child(4),
@@ -478,7 +504,7 @@ p {
 .New_Peoduct .wrap:hover .iconPart a:nth-last-child(2),
 .New_Peoduct .wrap:hover .iconPart a:nth-last-child(1) {
   -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
 }
 
 .Intro {
@@ -517,7 +543,7 @@ p {
 
 .Intro .part_2 .wrap:hover {
   -webkit-box-shadow: 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
-          box-shadow: 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
+  box-shadow: 0px 40px 40px 0px rgba(14, 17, 51, 0.1);
 }
 
 .Intro .part_2 .wrap h2 {
@@ -755,8 +781,8 @@ p {
 .Shop_Page_products .part_1 .Product_Tags .items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  /* -ms-grid-columns: (1fr)[2]; */
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .Shop_Page_products .part_1 .Product_Tags .items a {
@@ -792,8 +818,8 @@ p {
 
 .Shop_Page_products .part_2 .ShortItems {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .Shop_Page_products .part_2 .ShortItems p {
@@ -809,14 +835,14 @@ p {
 
 .Shop_Page_products .part_2 .dropdown .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.05rem rgba(119, 119, 119, 0.5);
-          box-shadow: 0 0 0 0.05rem rgba(119, 119, 119, 0.5);
+  box-shadow: 0 0 0 0.05rem rgba(119, 119, 119, 0.5);
 }
 
 .Shop_Page_products .part_2 .allItem {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  /* -ms-grid-columns: (1fr)[4]; */
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .Shop_Page_products .part_2 .allItem .wrap {
@@ -885,8 +911,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Cart_Product .classBody .thumb-box img {
@@ -999,8 +1025,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -1045,7 +1071,7 @@ p {
 
 .AboutPageData .CompanyInfo .part_1 .imgFile .img:hover {
   -webkit-transform: scale(105%);
-          transform: scale(105%);
+  transform: scale(105%);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -1147,7 +1173,7 @@ p {
 
 .AboutPageData .mission .part_2 .imgFile .img .imgFile_1 {
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .AboutPageData .mission .part_2 .imgFile .img .text {
@@ -1231,7 +1257,7 @@ p {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
   z-index: 99;
   overflow: hidden;
 }
@@ -1292,7 +1318,7 @@ p {
 .About_OurTeam .part_2 .item .imgFile:hover a:hover {
   color: #dd131a;
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
 }
@@ -1558,8 +1584,8 @@ p {
   display: flex;
   margin-bottom: 50px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .SingleBlogData .CommentSection .next_Prev .icon {
@@ -1635,20 +1661,24 @@ p {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.664);
-  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease, -webkit-transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease, visibility 0.4s ease, -webkit-transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease-in-out;
-  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease,
+    -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    -webkit-transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    transform 0.4s ease-in-out;
+  transition: opacity 0.4s ease, visibility 0.4s ease,
+    transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   visibility: hidden;
   opacity: 0;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   overflow: hidden;
   z-index: 9999;
   top: 0;
@@ -1658,7 +1688,7 @@ p {
   visibility: visible;
   opacity: 1;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .Gallery_Img .tumImg {
@@ -1698,7 +1728,7 @@ p {
 
 .Gallery_Img .myGrid {
   -webkit-column-count: 3;
-          column-count: 3;
+  column-count: 3;
 }
 
 .FaqData {
@@ -1764,12 +1794,10 @@ p {
 }
 
 .FaqData .Accordion .accBody {
-  -webkit-columns: 2;
-          columns: 2;
   margin-top: 60px;
 }
 
-.FaqData .Accordion .accBody .textFile {
+.FaqData .textFile {
   border: 1px solid #ddd;
   padding: 14px 20px;
   border-radius: 10px;
@@ -1777,25 +1805,33 @@ p {
   overflow: hidden;
 }
 
-.FaqData .Accordion .accBody .textFile .toggle_text {
-  height: 0px;
-  margin-top: 3px;
-  -webkit-transition: height 0.5s linear;
-  transition: height 0.5s linear;
-  position: relative;
-  top: 12px;
-}
-
-.FaqData .Accordion .accBody .textFile .toggle_text.active {
-  height: 105px;
-}
-
-.FaqData .Accordion .accBody .textFile .text {
+.FaqData .textFile .text {
+  cursor: pointer;
+  color: #dd131a;
   font-size: 16px;
   font-weight: 600;
 }
 
-.FaqData .Accordion .accBody .textFile .icon {
+.FaqData .textFile .toggle_text {
+  height: 0;
+  margin-top: 3px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  position: relative;
+  top: 12px;
+  opacity: 0;
+}
+
+.FaqData .textFile .checkbox {
+  display: none;
+}
+
+.FaqData .textFile .checkbox:checked ~ .toggle_text {
+  height: 120px;
+  opacity: 1;
+}
+
+.FaqData .textFile .icon {
   font-size: 20px;
   color: #dd131a;
   cursor: pointer;
@@ -1841,9 +1877,17 @@ p {
   margin-top: 50px;
 }
 
-Footer Section
+.styles_scroll-to-top__2A70v {
+  z-index: 999 !important;
+  background-color: #dd131a !important;
+}
+
+.styles_scroll-to-top__2A70v svg {
+  fill: #fff !important;
+}
+
 .Footer {
-  background: #222222;
+  background: #222222 !important;
   padding: 80px 0;
 }
 

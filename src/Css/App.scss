@@ -17,19 +17,35 @@ p {
 .App {
   overflow: hidden !important;
 }
-.menu {
-  background-color: #fff;
+.Menu {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ddd;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+  z-index: 9999;
+  .nav-link {
+    color: #000 !important;
+    font-size: 16px;
+    padding: 14px 20px !important;
+  }
+ 
 }
-.stellarnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.Menu.sticky {
+  position: fixed;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 }
-.stellarnav li a {
-  font-family: "Ramaraja", serif !important;
-  font-size: 20px;
+.navbar-expand-lg {
+  padding: 15px 0;
 }
-
+.dropdown-menu {
+  top: 65px;
+  border: none;
+}
 .menu_icon a {
   margin-left: 10px;
   font-size: 18px;
@@ -201,15 +217,14 @@ p {
 .New_Peoduct {
   margin-top: 100px;
   margin-bottom: 100px;
-  
 }
-.amit{
-  .swal-button{
+.amit {
+  .swal-button {
     background: $primary_color !important;
   }
 }
 
-.New_Peoduct .modelActiveImg{
+.New_Peoduct .modelActiveImg {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -235,17 +250,16 @@ p {
 }
 .New_Peoduct .GoEyeClosed {
   cursor: pointer;
-    position: absolute;
-    right: 57px;
-    top: 50px;
-    font-size: 40px;
-    color: #fff;
-    transition: all .3s linear;
-    &:hover{
-      transform: scale(1.2);
-      color: $primary_color;
-    }
-  
+  position: absolute;
+  right: 57px;
+  top: 50px;
+  font-size: 40px;
+  color: #fff;
+  transition: all 0.3s linear;
+  &:hover {
+    transform: scale(1.2);
+    color: $primary_color;
+  }
 }
 .New_Peoduct .wrap > h2 {
   font-family: $font-secondary;
@@ -1126,8 +1140,7 @@ p {
     .wrap {
       margin-bottom: 60px;
     }
-    .img {
-    }
+    
     .textBody {
       padding: 20px;
       .dateSection {
@@ -1474,40 +1487,45 @@ p {
   .Accordion {
     margin-top: 100px;
     .accBody {
-      columns: 2;
       margin-top: 60px;
-      // width: 50%;
-      .textBody {
-        // overflow: hidden;
-      }
-      .textFile {
-        border: 1px solid #ddd;
-        padding: 14px 20px;
-        border-radius: 10px;
-        // margin: 10px 0;
-        margin-bottom: 20px;
-        overflow: hidden;
-        .toggle_text {
-          height: 0px;
-          margin-top: 3px;
-          transition: height 0.5s linear;
-          position: relative;
-          top: 12px;
-        }
+      
+    }
+  }
+  .textFile {
+    border: 1px solid #ddd;
+    padding: 14px 20px;
+    border-radius: 10px;
+    // margin: 10px 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    .text {
+      cursor: pointer;
+      color: $primary_color;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .toggle_text {
+      height: 0;
+      margin-top: 3px;
+      transition: all 0.4s ease-in;
+      position: relative;
+      top: 12px;
+      opacity: 0;
+    }
 
-        .toggle_text.active {
-          height: 105px;
-        }
-        .text {
-          font-size: 16px;
-          font-weight: 600;
-        }
-        .icon {
-          font-size: 20px;
-          color: $primary_color;
-          cursor: pointer;
-        }
-      }
+    .checkbox {
+      display: none;
+    }
+    .checkbox:checked ~ .toggle_text {
+      height: 120px;
+      opacity: 1;
+      // transition: all 1s ease-in;
+    }
+
+    .icon {
+      font-size: 20px;
+      color: $primary_color;
+      cursor: pointer;
     }
   }
 }
@@ -1518,40 +1536,48 @@ p {
   padding-bottom: 50px;
   .part_1 {
     padding-right: 60px;
-    h2{
+    h2 {
       font-size: 25px;
       font-weight: 600;
       margin-bottom: 20px;
     }
-    .headText{
+    .headText {
       font-weight: 600;
     }
-    p{
+    p {
       font-size: 15px;
       margin-top: 10px;
-
     }
-    .icon{
+    .icon {
       font-size: 18px;
       color: $primary_color;
       margin-right: 5px;
     }
   }
 
-  .part_2{
-    h2{
+  .part_2 {
+    h2 {
       font-size: 25px;
       font-weight: 600;
       margin-bottom: 20px;
     }
-    .mainContactForm{
+    .mainContactForm {
       margin-top: 50px;
     }
   }
 }
-*/ Footer Section */
+// Scroll to top
+.styles_scroll-to-top__2A70v {
+  z-index: 999 !important;
+  background-color: $primary_color !important;
+  svg {
+    fill: #fff !important;
+  }
+}
+// */ Footer Section */
+
 .Footer {
-  background: #222222;
+  background: #222222 !important;
   padding: 80px 0;
 }
 .Footer h3 {
