@@ -17,6 +17,7 @@ import Gallery from "./Page/Gallery";
 import Faq from "./Page/Faq";
 import Contact from "./Page/Contact";
 import ScrollToTop from "./Components/Universal_Components/ScrollToTop";
+import './Custom';
 
 function App() {
   return (

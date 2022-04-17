@@ -24,7 +24,7 @@ const Shop_Page_products = () => {
   }, []);
 
   return (
-    <div className="Shop_Page_products New_Peoduct">
+    <div className="Shop_Page_products New_Product">
       <Container>
         <Row>
           <Col md={2} className="part_1">
@@ -145,6 +145,7 @@ const Shop_Page_products = () => {
                     <Link>DeepPink</Link>
                     <Link>Shield</Link>
                     <Link>Wayfarer</Link>
+                    <Link>Blue Cut</Link>
                   </div>
                 </div>
               </div>
@@ -199,22 +200,22 @@ const Shop_Page_products = () => {
                         <p className="text">$ {data.discount}</p>
                         <p className="shape">On Sale!</p>
                         <div className="iconPart">
-                          <Link to={"/"}>
+                          <span to={"/"}>
                             {" "}
                             <MdFavorite className="icon" />
-                          </Link>
-                          <Link to={"/"}>
+                          </span>
+                          <span to={"/"}>
                             {" "}
                             <AiTwotoneCopy className="icon" />
-                          </Link>
-                          <Link to={"/"}>
+                          </span>
+                          <span to={"/"}>
                             {" "}
                             <BiShow className="icon" />
-                          </Link>
-                          <Link to={"/"}>
+                          </span>
+                          <span to={"/"}>
                             {" "}
                             <BsCartPlusFill className="icon" />
-                          </Link>
+                          </span>
                         </div>
                         <img
                           className="img_overflow"
@@ -261,15 +262,8 @@ const Shop_Page_products = () => {
                 <span>
                   <Link>3</Link>
                 </span>
-                <span>
-                  <Link>4</Link>
-                </span>
-                <span>
-                  <Link>5</Link>
-                </span>
-                <span>
-                  <Link>6</Link>
-                </span>
+               
+                
                 <span>
                   <Link>
                     {" "}

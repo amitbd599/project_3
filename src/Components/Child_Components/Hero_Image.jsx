@@ -13,7 +13,7 @@ const Hero_Image = () => {
             <TiArrowRight className="TiChartPie"></TiArrowRight>
           </Col>
 
-          <Col md={6}>
+          <Col md={6} className="part_2">
             <div className="wrap">
               <h3>Our Party Visions</h3>
               <h2>Join The Fight for Our Freedom</h2>

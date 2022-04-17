@@ -15,7 +15,7 @@ const Slider = () => {
     });
   }, []);
   return (
-    <div>
+    <div className="slider">
       <Carousel
         itemsToShow={1}
         easing="cubic-bezier(1,.15,.55,1.54)"

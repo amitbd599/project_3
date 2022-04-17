@@ -32,7 +32,7 @@ const Counter = () => {
       <Container>
         <Row>
             {data.map((data)=>(
-                 <Col md={3}>
+                 <Col md={3} xs={6}>
                      <div className="wrap">
                         <div className="icon">
                             <span>

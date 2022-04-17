@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+  padding-left: 0;
+}
+
+header .stickyDownMenu {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+header .logo {
+  font-weight: 700;
+  font-size: 25px;
+  color: #333;
+  text-decoration: none;
+}
+header .mainNavBar ul {
+  list-style: none;
+}
+header .mainNavBar ul li {
+  position: relative;
+  float: left;
+}
+header .mainNavBar ul li a {
+  font-size: 15px;
+  padding: 25px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+}
+header .mainNavBar ul li a:hover {
+  /* background: #dd131a; */
+  color: #dd131a;
+}
+header .mainNavBar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  top: 80px;
+  box-shadow: 0px 11px 48.02px 0.98px rgba(10, 10, 10, 0.13);
+  transition: all .3s ease-in;
+  z-index: 9999;
+}
+header .mainNavBar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+header .mainNavBar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+header .mainNavBar ul li:focus-within > ul,
+header .mainNavBar ul li:hover > ul {
+  display: initial;
+  visibility: visible;
+  opacity: 1;
+  top: 75px;
+}
+.active {
+  color: #dd131a !important;
+  /* background: #dd131a; */
+
+}
+
+#menuBar,
+#menuBarDown {
+  display: none;
+}
+header label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 991px) {
+  header {
+    /* padding: 20px; */
+  }
+  header label {
+    display: inline;
+  }
+  header .mainNavBar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s linear;
+  }
+  header .mainNavBar ul li {
+    width: 100%;
+  }
+  header .mainNavBar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .mainNavBar ul li ul li {
+    background: #eee;
+  }
+  header .mainNavBar ul li ul li ul{
+    width:100%;
+    left: 0;
+  }
+  #menuBar:checked ~ .mainNavBar,
+  #menuBarDown:checked ~ .mainNavBar{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+}

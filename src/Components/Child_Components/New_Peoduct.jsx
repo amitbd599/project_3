@@ -35,7 +35,7 @@ const New_Peoduct = () => {
     });
   }
   return (
-    <Container className="New_Peoduct">
+    <Container className="New_Product">
       <Row>
         <Col>
           <div className="wrap text-center">
@@ -51,7 +51,7 @@ const New_Peoduct = () => {
         </div>
 
         {product.map((data) => (
-          <Col md={3} className="mb-100">
+          <Col md={3} xs={6} className="mb-100 productData">
             <div className="wrap">
               <div className="image">
                 <img src={data.img} alt="" />
@@ -59,27 +59,27 @@ const New_Peoduct = () => {
                   <p className="text">$ {data.discount}</p>
                   <p className="shape">On Sale!</p>
                   <div className="iconPart">
-                    <Link to={"/"}>
+                    <span to={"/"}>
                       {" "}
                       <MdFavorite className="icon" />
-                    </Link>
-                    <Link to={"/"}>
+                    </span>
+                    <span to={"/"}>
                       {" "}
                       <AiTwotoneCopy className="icon" />
-                    </Link>
-                    <Link to={"/"}>
+                    </span>
+                    <span to={"/"}>
                       {" "}
                       <BiShow
                         className="icon"
                         onClick={() => viewImgHendel(data.img_Overlay)}
                       />
-                    </Link>
+                    </span>
                  
 
-                    <Link >
+                    <span >
                       {" "}
                       <BsCartPlusFill className="icon" onClick={alert}/>
-                    </Link>
+                    </span>
                   </div>
                   <img className="img_overflow" src={data.img_Overlay} alt="" />
                 </div>

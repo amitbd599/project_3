@@ -29,7 +29,7 @@ const About_OurTeam = () => {
         <Row className="part_2">
         
           {data.map((data)=>(
-                <Col md={3}>
+                <Col md={3} xs={6}>
               <div className="wrap">
               <div className="item">
                 <div className="imgFile">
