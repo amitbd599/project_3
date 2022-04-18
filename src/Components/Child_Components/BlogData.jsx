@@ -78,12 +78,7 @@ const BlogData = () => {
                   <li>
                     <Link className="item">3</Link>
                   </li>
-                  <li>
-                    <Link className="item">4</Link>
-                  </li>
-                  <li>
-                    <Link className="item">5</Link>
-                  </li>
+                 
                   <li>
                     <Link className="item"><AiOutlineArrowRight/></Link>
                   </li>
