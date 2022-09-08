@@ -163,7 +163,7 @@ const Shop_Page_products = () => {
                         </div>
                         <div className="textitem">
                           <Link>{data.title}</Link>
-                          <p>$ { data.price}</p>
+                          <p>$ {data.price}</p>
                         </div>
                       </div>
                     ))}
@@ -262,8 +262,7 @@ const Shop_Page_products = () => {
                 <span>
                   <Link>3</Link>
                 </span>
-               
-                
+
                 <span>
                   <Link>
                     {" "}

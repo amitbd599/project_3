@@ -20,7 +20,7 @@ const Cart_Product = () => {
     setValue(value + 1);
   };
   const decreaseQty = (e) => {
-    if(e==data._id){
+    if (e == data._id) {
       setValue(value - 1);
     }
     // if (value > 0) {
